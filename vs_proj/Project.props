@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>libCodelite;$(SolutionDir)../LiteEditor;$(SolutionDir)../Plugin;$(SolutionDir)../sdk/wxscintilla/include;$(SolutionDir)../sdk/wxsqlite3/include;$(SolutionDir)../CDKGDB;$(SolutionDir)../lib_sdk_ui;$(SolutionDir)../lib_cdk_ui;$(SolutionDir)../lib_sdk;$(SolutionDir)../lib_cdk;$(SolutionDir)../LiteEditor/CDKEditor;$(SolutionDir)../LiteEditor/CDKDebugger;$(SolutionDir)../Interfaces;$(SolutionDir)../CodeLite;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile />
+    <ClCompile>
+      <PreprocessorDefinitions>__WXMSW__;WXUSINGDLL_WXSQLITE3;WXUSINGDLL_SDK;WXUSINGDLL_CL;WXUSINGDLL_LIB_CDK;WXUSINGDLL_LIB_CDK_UI;WXUSINGDLL_LIB_SDK;WXUSINGDLL_LIB_SDK_UI;WIN32_LEAN_AND_MEAN;__BUILD_CDK__;HAS_LIBCLANG=0;HAS_LIBCLANG_BRIEFCOMMENTS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
