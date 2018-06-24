@@ -8,7 +8,10 @@
 #include <map>
 #include <vector>
 #include <wx/file.h>
-#include <wx/filefn.h> 
+#include <wx/filefn.h>
+
+#define DEBUG 0
+
 // pin constants
 const wxString PINNUM = wxT("pinNum");
 const wxString SELECT = wxT("select");
@@ -23,11 +26,15 @@ const wxString PARITY = wxT("parity");
 const wxString STOP_BIT = wxT("stop bits");
 const wxString UART_BIT = wxT("uart bits");
 
+const wxString PIN_NAME_FILE = wxT("pin_name.json");
+
 wxUint8 *json_content;
 wxFile file;
-wxFile log_file;
 
-#define LOG_FILE "debug.log"
+#if DEBUG
+wxFile log_file;
+const wxString LOG_FILE = wxT("debug.log");
+#endif
 
 const wxString PIN_NUM = wxT("pin_num");
 const wxString PIN_SELECT = wxT("pin_select");
@@ -53,7 +60,7 @@ wxString thisDllDirPath()
     wxString thisPath = L"";
     WCHAR path[MAX_PATH];
     HMODULE hm;
-    if( GetModuleHandleExW( GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS | 
+    if( GetModuleHandleExW( GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS |
                             GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT,
                             (LPWSTR) &thisDllDirPath, &hm ) )
     {
@@ -61,13 +68,13 @@ wxString thisDllDirPath()
         thisPath = wxFileName(path).GetPath();
         //PathRemoveFileSpecW( path );
         //thisPath = CStringW( path );
-        //if( !thisPath.IsEmpty() && 
-        //    thisPath.GetAt( thisPath.GetLength()-1 ) != '\\' ) 
+        //if( !thisPath.IsEmpty() &&
+        //    thisPath.GetAt( thisPath.GetLength()-1 ) != '\\' )
         //    thisPath += L"\\";
     }
     //else if( _DEBUG ) std::wcout << L"GetModuleHandle Error: " << GetLastError() << std::endl;
 
-    //if( _DEBUG ) std::wcout << L"thisDllDirPath: [" << CStringW::PCXSTR( thisPath ) << L"]" << std::endl;       
+    //if( _DEBUG ) std::wcout << L"thisDllDirPath: [" << CStringW::PCXSTR( thisPath ) << L"]" << std::endl;
     return thisPath;
 }
 typedef std::shared_ptr<JSONRoot> JsonRootPtr;
@@ -77,7 +84,7 @@ std::vector<wxStringPtr> jsonStrs;
 extern "C" {
     int pin_num_file_init(void)
     {
-        file.Open(thisDllDirPath() + wxT("/pin_name.json"), wxFile::read);
+        file.Open(thisDllDirPath() + "/" + PIN_NAME_FILE, wxFile::read);
         if (!(file.IsOpened())) {
             return -1;
         }
@@ -118,13 +125,17 @@ extern "C" {
                 property = pin.nextChild();
             }
 
+#if DEBUG
             wxString log = "pinNum: " + pinNum + "\n";
             log << "PinNum:" + PinNum + "\n";
+#endif
             if (pinNum == PinNum) {
                 if (select == PinSelect) {
+#if DEBUG
                     log << "select2: " + select + "\n";
                     log << "PinSelect2:" + PinSelect + "\n";
                     log_file.Write(log);
+#endif
                     *pin_num = PinFunc.BeforeFirst('_');
                     *pin_func = PinFunc;
                     return 0;
@@ -135,7 +146,7 @@ extern "C" {
         }
         return -1;
     }
-    CHIP_CONFIG_DLL_API void OnInit() 
+    CHIP_CONFIG_DLL_API void OnInit()
     {
         //do nothing
     }
@@ -162,10 +173,12 @@ extern "C" {
         wxString pin_num, pin_func;
         wxString funcBody = "";
 
-        int ret =log_file.Create(thisDllDirPath() + wxT(LOG_FILE),true);
-        log_file.Open(thisDllDirPath() + "/" + wxT(LOG_FILE), wxFile::write);
+#if DEBUG
+        int ret =log_file.Create(thisDllDirPath() + "/" + LOG_FILE, true);
+        log_file.Open(thisDllDirPath() + "/" + LOG_FILE, wxFile::write);
         wxString log = "???\n!!!\n";
         log_file.Write(log);
+#endif
 
         while (pin.isOk()) {
             JSONElement property = pin.firstChild();
@@ -184,7 +197,7 @@ extern "C" {
                 }
                 else if (property.getName() == DEBOUNCE) {
                     dubounce = property.toString();
-                } 
+                }
 
                 property = pin.nextChild();
             }
@@ -208,8 +221,10 @@ extern "C" {
         file.Close();
         delete[] json_content;
 
+#if DEBUG
         /* Close Log File */
         log_file.Close();
+#endif
 
         return (char*)jstr->mb_str(wxConvUTF8).data();
     }

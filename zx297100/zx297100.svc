@@ -3,18 +3,18 @@
   <config Version="0.0.1"/>
   <ChipConfig>
     <CodeGenerateConfig>
-      <OutputFileName>$(ProjectPath)/pinmux_config.c</OutputFileName>
+      <OutputFileName>$(ProjectPath)/chip_config.c</OutputFileName>
       <IncludeFile>pin_name.h</IncludeFile>
       <IncludeFile>pinmux.h</IncludeFile>
       <DLLConfig>
-        <DLLFile>$(ProjectPath)/chip_config_dll.dll</DLLFile>
+        <DLLFile>$(ProjectPath)/chip_config.dll</DLLFile>
         <InitFunc>OnInit</InitFunc>
         <UninitFunc>OnUninit</UninitFunc>
         <GetErrorFunc>GetErrorMsg</GetErrorFunc>
       </DLLConfig>
     </CodeGenerateConfig>
     <ChipView>
-      <ChipName>ZX297100</ChipName>
+      <ChipName>ZX297100(PIN55 就是 PIN0)</ChipName>
       <ChipShape>CVS_LOOK_SQUARE</ChipShape>
       <PinCount>55</PinCount>
       <InitFunc>pin_init_code</InitFunc>
@@ -25,43 +25,43 @@
             <Func deviceId="GPIO0" csi_pin_name="GPIO0">GPIO0</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN0</Func>
             <Func deviceId="LPUART">LPUART_CTS</Func>
-			<Func deviceId="LPUART">LPUART_RTS</Func>
-			<Func deviceId="I2S">I2S_WS</Func>
-			<Func deviceId="TIM0">TIM0_ETR</Func>
-			<Func deviceId="UART2">UART2_RXD</Func>
-			<Func deviceId="UART2">UART2_TXD</Func>
-			<Func deviceId="UART0">UART0_RXD</Func>
-			<Func deviceId="UART0">UART0_TXD</Func>
+            <Func deviceId="LPUART">LPUART_RTS</Func>
+            <Func deviceId="I2S">I2S_WS</Func>
+            <Func deviceId="TIM0">TIM0_ETR</Func>
+            <Func deviceId="UART2">UART2_RXD</Func>
+            <Func deviceId="UART2">UART2_TXD</Func>
+            <Func deviceId="UART0">UART0_RXD</Func>
+            <Func deviceId="UART0">UART0_TXD</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="1" group="GPIO">
-          <PinFunctions select="GPIO1">
+          <PinFunctions select="LPUART_TXD">
             <Func deviceId="GPIO1" csi_pin_name="GPIO1">GPIO1</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN1</Func>
             <Func deviceId="LPUART">LPUART_RXD</Func>
             <Func deviceId="LPUART">LPUART_TXD</Func>
-			<Func deviceId="I2S">I2S_CLK</Func>
-			<Func deviceId="TIM0">TIM0_CH0</Func>
-			<Func deviceId="ADC">ADC_TRIG</Func>
-			<Func deviceId="DAC">DAC_TRIG</Func>
-			<Func deviceId="UART0">UART0_TXD</Func>
-			<Func deviceId="UART0">UART0_RXD</Func>
+            <Func deviceId="I2S">I2S_CLK</Func>
+            <Func deviceId="TIM0">TIM0_CH0</Func>
+            <Func deviceId="ADC">ADC_TRIG</Func>
+            <Func deviceId="DAC">DAC_TRIG</Func>
+            <Func deviceId="UART0">UART0_TXD</Func>
+            <Func deviceId="UART0">UART0_RXD</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="2" group="GPIO">
-          <PinFunctions select="GPIO2">
+          <PinFunctions select="LPUART_RXD">
             <Func deviceId="GPIO2" csi_pin_name="GPIO2">GPIO2</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN2</Func>
             <Func deviceId="LPUART">LPUART_TXD</Func>
             <Func deviceId="LPUART">LPUART_RXD</Func>
-			<Func deviceId="I2S">I2S_DIN</Func>
-			<Func deviceId="TIM0">TIM0_CH1</Func>
-			<Func deviceId="DAC">DAC_TRIG</Func>
-			<Func deviceId="ADC">ADC_TRIG</Func>
-			<Func deviceId="UART0">UART0_CTS</Func>
-			<Func deviceId="UART0">UART0_RTS</Func>
+            <Func deviceId="I2S">I2S_DIN</Func>
+            <Func deviceId="TIM0">TIM0_CH1</Func>
+            <Func deviceId="DAC">DAC_TRIG</Func>
+            <Func deviceId="ADC">ADC_TRIG</Func>
+            <Func deviceId="UART0">UART0_CTS</Func>
+            <Func deviceId="UART0">UART0_RTS</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -71,12 +71,12 @@
             <Func deviceId="AON_TEST">AON_TEST_PIN3</Func>
             <Func deviceId="LPUART">LPUART_RTS</Func>
             <Func deviceId="LPUART">LPUART_CTS</Func>
-			<Func deviceId="I2S">I2S_DOUT</Func>
-			<Func deviceId="TIM0">TIM0_CH2</Func>
-			<Func deviceId="UART2">UART2_TXD</Func>
-			<Func deviceId="UART2">UART2_RXD</Func>
-			<Func deviceId="UART0">UART0_RTS</Func>
-			<Func deviceId="UART0">UART0_CTS</Func>
+            <Func deviceId="I2S">I2S_DOUT</Func>
+            <Func deviceId="TIM0">TIM0_CH2</Func>
+            <Func deviceId="UART2">UART2_TXD</Func>
+            <Func deviceId="UART2">UART2_RXD</Func>
+            <Func deviceId="UART0">UART0_RTS</Func>
+            <Func deviceId="UART0">UART0_CTS</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -86,10 +86,10 @@
             <Func deviceId="AON_TEST">AON_TEST_PIN4</Func>
             <Func deviceId="LPTIM">LPTIM_OUT</Func>
             <Func deviceId="SCL1">SCL1</Func>
-			<Func deviceId="TIM0">TIM0_CH3</Func>
-			<Func deviceId="UART0">UART0_RXD</Func>
-			<Func deviceId="UART0">UART0_TXD</Func>
-			<Func deviceId="SIR">SIRIN</Func>
+            <Func deviceId="TIM0">TIM0_CH3</Func>
+            <Func deviceId="UART0">UART0_RXD</Func>
+            <Func deviceId="UART0">UART0_TXD</Func>
+            <Func deviceId="SIR">SIRIN</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -99,10 +99,10 @@
             <Func deviceId="AON_TEST">AON_TEST_PIN5</Func>
             <Func deviceId="LPTIM">LPTIM_ETR</Func>
             <Func deviceId="SDA1">SDA1</Func>
-			<Func deviceId="TIM0">TIM0_ETR</Func>
-			<Func deviceId="UART0">UART0_TXD</Func>
-			<Func deviceId="UART0">UART0_RXD</Func>
-			<Func deviceId="NSIR">NSIROUT</Func>
+            <Func deviceId="TIM0">TIM0_ETR</Func>
+            <Func deviceId="UART0">UART0_TXD</Func>
+            <Func deviceId="UART0">UART0_RXD</Func>
+            <Func deviceId="NSIR">NSIROUT</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -112,11 +112,11 @@
             <Func deviceId="AON_TEST">AON_TEST_PIN6</Func>
             <Func deviceId="LPTIM">LPTIM_CH0</Func>
             <Func deviceId="EXT">EXT_INT0</Func>
-			<Func deviceId="SCL0">SCL0</Func>
-			<Func deviceId="TIM0">TIM0_CH2</Func>
-			<Func deviceId="UART0">UART0_CTS</Func>
-			<Func deviceId="UART0">UART0_RTS</Func>
-			<Func deviceId="COMP">COMP_OUT</Func>
+            <Func deviceId="SCL0">SCL0</Func>
+            <Func deviceId="TIM0">TIM0_CH2</Func>
+            <Func deviceId="UART0">UART0_CTS</Func>
+            <Func deviceId="UART0">UART0_RTS</Func>
+            <Func deviceId="COMP">COMP_OUT</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -126,11 +126,11 @@
             <Func deviceId="AON_TEST">AON_TEST_PIN7</Func>
             <Func deviceId="LPTIM">LPTIM_CH1</Func>
             <Func deviceId="EXT">EXT_INT1</Func>
-			<Func deviceId="SDA0">SDA0</Func>
-			<Func deviceId="TIM0">TIM0_CH3</Func>
-			<Func deviceId="UART0">UART0_RTS</Func>
-			<Func deviceId="UART0">UART0_CTS</Func>
-			<Func deviceId="I2S">I2S_MCLK</Func>
+            <Func deviceId="SDA0">SDA0</Func>
+            <Func deviceId="TIM0">TIM0_CH3</Func>
+            <Func deviceId="UART0">UART0_RTS</Func>
+            <Func deviceId="UART0">UART0_CTS</Func>
+            <Func deviceId="I2S">I2S_MCLK</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -140,8 +140,8 @@
             <Func deviceId="I2S">I2S_WS</Func>
             <Func deviceId="SSP0">SSP0_CS</Func>
             <Func deviceId="TIM1">TIM1_ETR</Func>
-			<Func deviceId="DONGLE_SER">DONGLE_SER_I</Func>
-			<Func deviceId="ADC">ADC_TRIG</Func>
+            <Func deviceId="DONGLE_SER">DONGLE_SER_I</Func>
+            <Func deviceId="ADC">ADC_TRIG</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -151,8 +151,8 @@
             <Func deviceId="I2S">I2S_CLK</Func>
             <Func deviceId="SSP0">SSP0_CLK</Func>
             <Func deviceId="TIM1">TIM1_CH0</Func>
-			<Func deviceId="DONGLE_SER">DONGLE_SER_Q</Func>
-			<Func deviceId="I2S">I2S_MCLK</Func>
+            <Func deviceId="DONGLE_SER">DONGLE_SER_Q</Func>
+            <Func deviceId="I2S">I2S_MCLK</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -162,10 +162,10 @@
             <Func deviceId="I2S">I2S_DIN</Func>
             <Func deviceId="SSP0">SSP0_RXD</Func>
             <Func deviceId="TIM1">TIM1_CH1</Func>
-			<Func deviceId="UART2">UART2_TXD</Func>
-			<Func deviceId="UART2">UART2_RXD</Func>
-			<Func deviceId="DAC">DAC_TRIG</Func>
-			<Func deviceId="DONGLE_SER">DONGLE_SER_FP</Func>
+            <Func deviceId="UART2">UART2_TXD</Func>
+            <Func deviceId="UART2">UART2_RXD</Func>
+            <Func deviceId="DAC">DAC_TRIG</Func>
+            <Func deviceId="DONGLE_SER">DONGLE_SER_FP</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -175,10 +175,10 @@
             <Func deviceId="I2S">I2S_DOUT</Func>
             <Func deviceId="SSP0">SSP0_TXD</Func>
             <Func deviceId="TIM1">TIM1_CH2</Func>
-			<Func deviceId="UART2">UART2_RXD</Func>
-			<Func deviceId="UART2">UART2_TXD</Func>
-			<Func deviceId="MCO">MCO</Func>
-			<Func deviceId="DONGLE_SER">DONGLE_SER_CLK</Func>
+            <Func deviceId="UART2">UART2_RXD</Func>
+            <Func deviceId="UART2">UART2_TXD</Func>
+            <Func deviceId="MCO">MCO</Func>
+            <Func deviceId="DONGLE_SER">DONGLE_SER_CLK</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -188,10 +188,10 @@
             <Func deviceId="SCL1">SCL1</Func>
             <Func deviceId="SSP1">SSP1_CS</Func>
             <Func deviceId="TIM1">TIM1_CH3</Func>
-			<Func deviceId="UART0">UART0_TXD</Func>
-			<Func deviceId="UART0">UART0_RXD</Func>
-			<Func deviceId="TESTPIN0">TESTPIN0</Func>
-			<Func deviceId="SIR">SIRIN</Func>
+            <Func deviceId="UART0">UART0_TXD</Func>
+            <Func deviceId="UART0">UART0_RXD</Func>
+            <Func deviceId="TESTPIN0">TESTPIN0</Func>
+            <Func deviceId="SIR">SIRIN</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -201,10 +201,10 @@
             <Func deviceId="SDA1">SDA1</Func>
             <Func deviceId="SSP1">SSP1_CLK</Func>
             <Func deviceId="TIM0">TIM0_ETR</Func>
-			<Func deviceId="UART0">UART0_RXD</Func>
-			<Func deviceId="UART0">UART0_TXD</Func>
-			<Func deviceId="EXT">EXT_INT2</Func>
-			<Func deviceId="NSIR">NSIROUT</Func>
+            <Func deviceId="UART0">UART0_RXD</Func>
+            <Func deviceId="UART0">UART0_TXD</Func>
+            <Func deviceId="EXT">EXT_INT2</Func>
+            <Func deviceId="NSIR">NSIROUT</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -214,10 +214,10 @@
             <Func deviceId="SCL0">SCL0</Func>
             <Func deviceId="SSP1">SSP1_RXD</Func>
             <Func deviceId="TIM1">TIM1_ETR</Func>
-			<Func deviceId="UART0">UART0_RTS</Func>
-			<Func deviceId="UART0">UART0_CTS</Func>
-			<Func deviceId="EXT">EXT_INT3</Func>
-			<Func deviceId="TESTPIN1">TESTPIN1</Func>
+            <Func deviceId="UART0">UART0_RTS</Func>
+            <Func deviceId="UART0">UART0_CTS</Func>
+            <Func deviceId="EXT">EXT_INT3</Func>
+            <Func deviceId="TESTPIN1">TESTPIN1</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -227,10 +227,10 @@
             <Func deviceId="SDA0">SDA0</Func>
             <Func deviceId="SSP1">SSP1_TXD</Func>
             <Func deviceId="MCO">MCO</Func>
-			<Func deviceId="UART0">UART0_CTS</Func>
-			<Func deviceId="UART0">UART0_RTS</Func>
-			<Func deviceId="EXT">EXT_INT4</Func>
-			<Func deviceId="TESTPIN2">TESTPIN2</Func>
+            <Func deviceId="UART0">UART0_CTS</Func>
+            <Func deviceId="UART0">UART0_RTS</Func>
+            <Func deviceId="EXT">EXT_INT4</Func>
+            <Func deviceId="TESTPIN2">TESTPIN2</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -240,8 +240,8 @@
             <Func deviceId="SCL0">SCL0</Func>
             <Func deviceId="SSP1">SSP1_CS</Func>
             <Func deviceId="TIM1">TIM1_CH0</Func>
-			<Func deviceId="COMP">COMP_OUT</Func>
-			<Func deviceId="TESTPIN3">TESTPIN3</Func>
+            <Func deviceId="COMP">COMP_OUT</Func>
+            <Func deviceId="TESTPIN3">TESTPIN3</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -251,9 +251,9 @@
             <Func deviceId="SDA0">SDA0</Func>
             <Func deviceId="SSP1">SSP1_CLK</Func>
             <Func deviceId="TIM1">TIM1_CH1</Func>
-			<Func deviceId="ADC">ADC_TRIG</Func>
-			<Func deviceId="TESTPIN4">TESTPIN4</Func>
-			<Func deviceId="I2S">I2S_MCLK</Func>
+            <Func deviceId="ADC">ADC_TRIG</Func>
+            <Func deviceId="TESTPIN4">TESTPIN4</Func>
+            <Func deviceId="I2S">I2S_MCLK</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -263,10 +263,10 @@
             <Func deviceId="SCL1">SCL1</Func>
             <Func deviceId="SSP1">SSP1_RXD</Func>
             <Func deviceId="TIM1">TIM1_CH2</Func>
-			<Func deviceId="UART2">UART2_TXD</Func>
-			<Func deviceId="UART2">UART2_RXD</Func>
-			<Func deviceId="EXT">EXT_INT5</Func>
-			<Func deviceId="TESTPIN5">TESTPIN5</Func>
+            <Func deviceId="UART2">UART2_TXD</Func>
+            <Func deviceId="UART2">UART2_RXD</Func>
+            <Func deviceId="EXT">EXT_INT5</Func>
+            <Func deviceId="TESTPIN5">TESTPIN5</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -276,10 +276,10 @@
             <Func deviceId="SDA1">SDA1</Func>
             <Func deviceId="SSP1">SSP1_TXD</Func>
             <Func deviceId="TIM1">TIM1_CH3</Func>
-			<Func deviceId="UART2">UART2_RXD</Func>
-			<Func deviceId="UART2">UART2_TXD</Func>
-			<Func deviceId="EXT">EXT_INT6</Func>
-			<Func deviceId="MCO">MCO</Func>
+            <Func deviceId="UART2">UART2_RXD</Func>
+            <Func deviceId="UART2">UART2_TXD</Func>
+            <Func deviceId="EXT">EXT_INT6</Func>
+            <Func deviceId="MCO">MCO</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -289,10 +289,10 @@
             <Func deviceId="I2S">I2S_WS</Func>
             <Func deviceId="SSP0">SSP0_CS</Func>
             <Func deviceId="TIM0">TIM0_CH0</Func>
-			<Func deviceId="UART0">UART0_TXD</Func>
-			<Func deviceId="UART0">UART0_RXD</Func>
-			<Func deviceId="EXT">EXT_INT7</Func>
-			<Func deviceId="SIRIN">SIRIN</Func>
+            <Func deviceId="UART0">UART0_TXD</Func>
+            <Func deviceId="UART0">UART0_RXD</Func>
+            <Func deviceId="EXT">EXT_INT7</Func>
+            <Func deviceId="SIRIN">SIRIN</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -302,10 +302,10 @@
             <Func deviceId="I2S">I2S_CLK</Func>
             <Func deviceId="SSP0">SSP0_CLK</Func>
             <Func deviceId="TIM0">TIM0_CH1</Func>
-			<Func deviceId="UART0">UART0_RXD</Func>
-			<Func deviceId="UART0">UART0_TXD</Func>
-			<Func deviceId="MCO">MCO</Func>
-			<Func deviceId="NSIR">NSIROUT</Func>
+            <Func deviceId="UART0">UART0_RXD</Func>
+            <Func deviceId="UART0">UART0_TXD</Func>
+            <Func deviceId="MCO">MCO</Func>
+            <Func deviceId="NSIR">NSIROUT</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -315,10 +315,10 @@
             <Func deviceId="I2S">I2S_DIN</Func>
             <Func deviceId="SSP0">SSP0_RXD</Func>
             <Func deviceId="TIM0">TIM0_CH2</Func>
-			<Func deviceId="UART0">UART0_RTS</Func>
-			<Func deviceId="UART0">UART0_CTS</Func>
-			<Func deviceId="TESTPIN6">TESTPIN6</Func>
-			<Func deviceId="DAC">DAC_TRIG</Func>
+            <Func deviceId="UART0">UART0_RTS</Func>
+            <Func deviceId="UART0">UART0_CTS</Func>
+            <Func deviceId="TESTPIN6">TESTPIN6</Func>
+            <Func deviceId="DAC">DAC_TRIG</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -328,67 +328,60 @@
             <Func deviceId="I2S">I2S_DOUT</Func>
             <Func deviceId="SSP0">SSP0_TXD</Func>
             <Func deviceId="TIM0">TIM0_CH3</Func>
-			<Func deviceId="UART0">UART0_CTS</Func>
-			<Func deviceId="UART0">UART0_RTS</Func>
-			<Func deviceId="TESTPIN7">TESTPIN7</Func>
+            <Func deviceId="UART0">UART0_CTS</Func>
+            <Func deviceId="UART0">UART0_RTS</Func>
+            <Func deviceId="TESTPIN7">TESTPIN7</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="24" group="GPIO">
-          <PinFunctions select="M0_JTAG_TCK">
+          <PinFunctions select="GPIO24">
             <Func deviceId="GPIO24" csi_pin_name="GPIO24">GPIO24</Func>
-            <Func deviceId="M0_JTAG">M0_JTAG_TCK</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TCK</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TCK</Func>
-			<Func deviceId="CK_SWD">CK_SWD_TCK</Func>
+            <Func deviceId="CK_SWD">CK_SWD_TCK</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="25" group="GPIO">
-          <PinFunctions select="M0_JTAG_TDI">
+          <PinFunctions select="GPIO25">
             <Func deviceId="GPIO25" csi_pin_name="GPIO25">GPIO25</Func>
-            <Func deviceId="M0_JTAG">M0_JTAG_TDI</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TDI</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TDI</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="26" group="GPIO">
-          <PinFunctions select="M0_JTAG_TDO">
+          <PinFunctions select="GPIO26">
             <Func deviceId="GPIO26" csi_pin_name="GPIO26">GPIO26</Func>
-            <Func deviceId="M0_JTAG">M0_JTAG_TDO</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TDO</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TDO</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="27" group="GPIO">
-          <PinFunctions select="M0_JTAG_TMS">
+          <PinFunctions select="GPIO27">
             <Func deviceId="GPIO27" csi_pin_name="GPIO27">GPIO27</Func>
-            <Func deviceId="M0_JTAG">M0_JTAG_TMS</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TMS</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TMS</Func>
-			<Func deviceId="CK_SWD">CK_SWD_TMS</Func>
+            <Func deviceId="CK_SWD">CK_SWD_TMS</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="28" group="GPIO">
           <PinFunctions select="GPIO28">
             <Func deviceId="GPIO28" csi_pin_name="GPIO28">GPIO28</Func>
-            <Func deviceId="M0_JTAG">M0_JTAG_TRST</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_RTCK</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TRST</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="29" canModify="false">
-          <PinFunctions select="">
-          </PinFunctions>
+          <PinFunctions select=""/>
           <Comment/>
         </Pin>
         <Pin pinNum="30" canModify="false">
-          <PinFunctions select="">
-          </PinFunctions>
+          <PinFunctions select=""/>
           <Comment/>
         </Pin>
         <Pin pinNum="31" group="GPIO">
@@ -397,8 +390,7 @@
             <Func deviceId="SPIFC">SPIFC_CLK</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TCK</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TCK</Func>
-			<Func deviceId="M0_JTAG">M0_JTAG_TCK</Func>
-			<Func deviceId="CK_SWD">CK_SWD_TCK</Func>
+            <Func deviceId="CK_SWD">CK_SWD_TCK</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -408,7 +400,6 @@
             <Func deviceId="SPIFC">SPIFC_CS</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TDI</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TDI</Func>
-			<Func deviceId="M0_JTAG">M0_JTAG_TDI</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -418,7 +409,6 @@
             <Func deviceId="SPIFC">SPIFC_DATA0</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TDO</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TDO</Func>
-			<Func deviceId="M0_JTAG">M0_JTAG_TDO</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -428,8 +418,7 @@
             <Func deviceId="SPIFC">SPIFC_DATA1</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TMS</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TMS</Func>
-			<Func deviceId="M0_JTAG">M0_JTAG_TMS</Func>
-			<Func deviceId="CK_SWD">CK_SWD_TMS</Func>
+            <Func deviceId="CK_SWD">CK_SWD_TMS</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -439,7 +428,6 @@
             <Func deviceId="SPIFC">SPIFC_DATA2</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_RTCK</Func>
             <Func deviceId="RF_JTAG">RF_JTAG_TRST</Func>
-			<Func deviceId="M0_JTAG">M0_JTAG_TRST</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
@@ -451,21 +439,21 @@
           <Comment/>
         </Pin>
         <Pin pinNum="37" group="GPIO">
-          <PinFunctions select="GPIO37">
+          <PinFunctions select="SIM_RST">
             <Func deviceId="GPIO37" csi_pin_name="GPIO37">GPIO37</Func>
             <Func deviceId="SIM">SIM_RST</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="38" group="GPIO">
-          <PinFunctions select="GPIO38">
+          <PinFunctions select="SIM_CLK">
             <Func deviceId="GPIO38" csi_pin_name="GPIO38">GPIO38</Func>
             <Func deviceId="SIM">SIM_CLK</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
         <Pin pinNum="39" group="GPIO">
-          <PinFunctions select="GPIO39">
+          <PinFunctions select="SIM_DATA">
             <Func deviceId="GPIO39" csi_pin_name="GPIO39">GPIO39</Func>
             <Func deviceId="SIM">SIM_DATA</Func>
           </PinFunctions>
@@ -488,13 +476,11 @@
           <Comment/>
         </Pin>
         <Pin pinNum="42" canModify="false">
-          <PinFunctions select="">
-          </PinFunctions>
+          <PinFunctions select=""/>
           <Comment/>
         </Pin>
         <Pin pinNum="43" canModify="false">
-          <PinFunctions select="">
-          </PinFunctions>
+          <PinFunctions select=""/>
           <Comment/>
         </Pin>
         <Pin pinNum="44" group="GPIO">
@@ -547,13 +533,11 @@
           <Comment/>
         </Pin>
         <Pin pinNum="51" canModify="false">
-          <PinFunctions select="">
-          </PinFunctions>
+          <PinFunctions select=""/>
           <Comment/>
         </Pin>
         <Pin pinNum="52" canModify="false">
-          <PinFunctions select="">
-          </PinFunctions>
+          <PinFunctions select=""/>
           <Comment/>
         </Pin>
         <Pin pinNum="53" group="GPIO">
@@ -570,7 +554,6 @@
         </Pin>
       </Pins>
     </ChipView>
-    <ChipPropertiesView>
-    </ChipPropertiesView>
+    <ChipPropertiesView/>
   </ChipConfig>
 </com.csky.cds.peripheral>
