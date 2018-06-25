@@ -84,8 +84,16 @@ std::vector<wxStringPtr> jsonStrs;
 extern "C" {
     int pin_num_file_init(void)
     {
+#if DEBUG
+		wxString log = "";
+		log_file.Write("enter pin_num_file_init\n");
+#endif
         file.Open(thisDllDirPath() + "/" + PIN_NAME_FILE, wxFile::read);
         if (!(file.IsOpened())) {
+#if DEBUG
+			log = "error 1\n";
+			log_file.Write(log);
+#endif
             return -1;
         }
 
@@ -97,13 +105,22 @@ extern "C" {
         if (file.Read((void *)json_content, filesize) != filesize) {
             file.Close();
             delete[] json_content;
+#if DEBUG
+			log = "error 2\n";
+			log_file.Write(log);
+#endif
             return -1;
         }
+		file.Close();
+//		log_file.Write(json_content);
+
         return 0;
     }
     int map_pin_fun(wxString pinNum, wxString select, wxString *pin_num, wxString *pin_func)
     {
-
+#if DEBUG
+		wxString log = "";
+#endif
         wxString input(json_content, wxConvUTF8);
         JSONRoot jsonPinInfo(input);
         JSONElement rootPin = jsonPinInfo.toElement();
@@ -126,8 +143,9 @@ extern "C" {
             }
 
 #if DEBUG
-            wxString log = "pinNum: " + pinNum + "\n";
+            log = "pinNum: " + pinNum + "\n";
             log << "PinNum:" + PinNum + "\n";
+			log_file.Write(log);
 #endif
             if (pinNum == PinNum) {
                 if (select == PinSelect) {
@@ -164,6 +182,12 @@ extern "C" {
     }
     CHIP_CONFIG_DLL_API char * pin_init_code_gen(char* jsonStr)
     {
+#if DEBUG
+        int ret =log_file.Create(thisDllDirPath() + "/" + LOG_FILE, true);
+        log_file.Open(thisDllDirPath() + "/" + LOG_FILE, wxFile::write);
+        wxString log = "???\n!!!\n";
+        log_file.Write(log);
+#endif
         pin_num_file_init();
         wxString input(jsonStr, wxConvUTF8);
         JSONRoot jsonPinInfo(input);
@@ -172,13 +196,6 @@ extern "C" {
         wxString pinNum, select, direct, pullup, dubounce;
         wxString pin_num, pin_func;
         wxString funcBody = "";
-
-#if DEBUG
-        int ret =log_file.Create(thisDllDirPath() + "/" + LOG_FILE, true);
-        log_file.Open(thisDllDirPath() + "/" + LOG_FILE, wxFile::write);
-        wxString log = "???\n!!!\n";
-        log_file.Write(log);
-#endif
 
         while (pin.isOk()) {
             JSONElement property = pin.firstChild();
