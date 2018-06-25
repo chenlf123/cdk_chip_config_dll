@@ -20,7 +20,7 @@
       <InitFunc>pin_init_code</InitFunc>
       <GenCodeFuncName>pin_init_code_gen</GenCodeFuncName>
       <Pins>
-        <Pin pinNum="55" group="GPIO">
+        <Pin pinNum="1" group="GPIO">
           <PinFunctions select="GPIO0">
             <Func deviceId="GPIO0" csi_pin_name="GPIO0">GPIO0</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN0</Func>
@@ -35,7 +35,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="1" group="GPIO">
+        <Pin pinNum="2" group="GPIO">
           <PinFunctions select="LPUART_TXD">
             <Func deviceId="GPIO1" csi_pin_name="GPIO1">GPIO1</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN1</Func>
@@ -50,7 +50,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="2" group="GPIO">
+        <Pin pinNum="3" group="GPIO">
           <PinFunctions select="LPUART_RXD">
             <Func deviceId="GPIO2" csi_pin_name="GPIO2">GPIO2</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN2</Func>
@@ -65,7 +65,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="3" group="GPIO">
+        <Pin pinNum="4" group="GPIO">
           <PinFunctions select="GPIO3">
             <Func deviceId="GPIO3" csi_pin_name="GPIO3">GPIO3</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN3</Func>
@@ -80,7 +80,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="4" group="GPIO">
+        <Pin pinNum="5" group="GPIO">
           <PinFunctions select="GPIO4">
             <Func deviceId="GPIO4" csi_pin_name="GPIO4">GPIO4</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN4</Func>
@@ -93,7 +93,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="5" group="GPIO">
+        <Pin pinNum="6" group="GPIO">
           <PinFunctions select="GPIO5">
             <Func deviceId="GPIO5" csi_pin_name="GPIO5">GPIO5</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN5</Func>
@@ -106,7 +106,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="6" group="GPIO">
+        <Pin pinNum="7" group="GPIO">
           <PinFunctions select="GPIO6">
             <Func deviceId="GPIO6" csi_pin_name="GPIO6">GPIO6</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN6</Func>
@@ -120,7 +120,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="7" group="GPIO">
+        <Pin pinNum="8" group="GPIO">
           <PinFunctions select="GPIO7">
             <Func deviceId="GPIO7" csi_pin_name="GPIO7">GPIO7</Func>
             <Func deviceId="AON_TEST">AON_TEST_PIN7</Func>
@@ -134,7 +134,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="8" group="GPIO">
+        <Pin pinNum="9" group="GPIO">
           <PinFunctions select="I2S_WS">
             <Func deviceId="GPIO8" csi_pin_name="GPIO8">GPIO8</Func>
             <Func deviceId="I2S">I2S_WS</Func>
@@ -145,7 +145,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="9" group="GPIO">
+        <Pin pinNum="10" group="GPIO">
           <PinFunctions select="I2S_CLK">
             <Func deviceId="GPIO9" csi_pin_name="GPIO9">GPIO9</Func>
             <Func deviceId="I2S">I2S_CLK</Func>
@@ -156,7 +156,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="10" group="GPIO">
+        <Pin pinNum="11" group="GPIO">
           <PinFunctions select="I2S_DIN">
             <Func deviceId="GPIO10" csi_pin_name="GPIO10">GPIO10</Func>
             <Func deviceId="I2S">I2S_DIN</Func>
@@ -169,7 +169,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="11" group="GPIO">
+        <Pin pinNum="12" group="GPIO">
           <PinFunctions select="I2S_DOUT">
             <Func deviceId="GPIO11" csi_pin_name="GPIO11">GPIO11</Func>
             <Func deviceId="I2S">I2S_DOUT</Func>
@@ -182,7 +182,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="12" group="GPIO">
+        <Pin pinNum="13" group="GPIO">
           <PinFunctions select="SCL1">
             <Func deviceId="GPIO12" csi_pin_name="GPIO12">GPIO12</Func>
             <Func deviceId="SCL1">SCL1</Func>
@@ -195,7 +195,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="13" group="GPIO">
+        <Pin pinNum="14" group="GPIO">
           <PinFunctions select="SDA1">
             <Func deviceId="GPIO13" csi_pin_name="GPIO13">GPIO13</Func>
             <Func deviceId="SDA1">SDA1</Func>
@@ -208,7 +208,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="14" group="GPIO">
+        <Pin pinNum="15" group="GPIO">
           <PinFunctions select="SCL0">
             <Func deviceId="GPIO14" csi_pin_name="GPIO14">GPIO14</Func>
             <Func deviceId="SCL0">SCL0</Func>
@@ -221,7 +221,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="15" group="GPIO">
+        <Pin pinNum="16" group="GPIO">
           <PinFunctions select="SDA0">
             <Func deviceId="GPIO15" csi_pin_name="GPIO15">GPIO15</Func>
             <Func deviceId="SDA0">SDA0</Func>
@@ -234,7 +234,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="16" group="GPIO">
+        <Pin pinNum="17" group="GPIO">
           <PinFunctions select="SCL0">
             <Func deviceId="GPIO16" csi_pin_name="GPIO16">GPIO16</Func>
             <Func deviceId="SCL0">SCL0</Func>
@@ -245,7 +245,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="17" group="GPIO">
+        <Pin pinNum="18" group="GPIO">
           <PinFunctions select="SDA0">
             <Func deviceId="GPIO17" csi_pin_name="GPIO17">GPIO17</Func>
             <Func deviceId="SDA0">SDA0</Func>
@@ -257,7 +257,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="18" group="GPIO">
+        <Pin pinNum="19" group="GPIO">
           <PinFunctions select="SCL1">
             <Func deviceId="GPIO18" csi_pin_name="GPIO18">GPIO18</Func>
             <Func deviceId="SCL1">SCL1</Func>
@@ -270,7 +270,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="19" group="GPIO">
+        <Pin pinNum="20" group="GPIO">
           <PinFunctions select="SDA1">
             <Func deviceId="GPIO19" csi_pin_name="GPIO19">GPIO19</Func>
             <Func deviceId="SDA1">SDA1</Func>
@@ -283,7 +283,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="20" group="GPIO">
+        <Pin pinNum="21" group="GPIO">
           <PinFunctions select="I2S_WS">
             <Func deviceId="GPIO20" csi_pin_name="GPIO20">GPIO20</Func>
             <Func deviceId="I2S">I2S_WS</Func>
@@ -296,7 +296,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="21" group="GPIO">
+        <Pin pinNum="22" group="GPIO">
           <PinFunctions select="I2S_CLK">
             <Func deviceId="GPIO21" csi_pin_name="GPIO21">GPIO21</Func>
             <Func deviceId="I2S">I2S_CLK</Func>
@@ -309,7 +309,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="22" group="GPIO">
+        <Pin pinNum="23" group="GPIO">
           <PinFunctions select="I2S_DIN">
             <Func deviceId="GPIO22" csi_pin_name="GPIO22">GPIO22</Func>
             <Func deviceId="I2S">I2S_DIN</Func>
@@ -322,7 +322,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="23" group="GPIO">
+        <Pin pinNum="24" group="GPIO">
           <PinFunctions select="I2S_DOUT">
             <Func deviceId="GPIO23" csi_pin_name="GPIO23">GPIO23</Func>
             <Func deviceId="I2S">I2S_DOUT</Func>
@@ -334,7 +334,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="24" group="GPIO">
+        <Pin pinNum="25" group="GPIO">
           <PinFunctions select="GPIO24">
             <Func deviceId="GPIO24" csi_pin_name="GPIO24">GPIO24</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TCK</Func>
@@ -343,7 +343,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="25" group="GPIO">
+        <Pin pinNum="26" group="GPIO">
           <PinFunctions select="GPIO25">
             <Func deviceId="GPIO25" csi_pin_name="GPIO25">GPIO25</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TDI</Func>
@@ -351,7 +351,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="26" group="GPIO">
+        <Pin pinNum="27" group="GPIO">
           <PinFunctions select="GPIO26">
             <Func deviceId="GPIO26" csi_pin_name="GPIO26">GPIO26</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TDO</Func>
@@ -359,7 +359,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="27" group="GPIO">
+        <Pin pinNum="28" group="GPIO">
           <PinFunctions select="GPIO27">
             <Func deviceId="GPIO27" csi_pin_name="GPIO27">GPIO27</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_TMS</Func>
@@ -368,7 +368,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="28" group="GPIO">
+        <Pin pinNum="29" group="GPIO">
           <PinFunctions select="GPIO28">
             <Func deviceId="GPIO28" csi_pin_name="GPIO28">GPIO28</Func>
             <Func deviceId="DSP_JTAG">DSP_JTAG_RTCK</Func>
@@ -376,15 +376,15 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="29" canModify="false">
-          <PinFunctions select=""/>
-          <Comment/>
-        </Pin>
         <Pin pinNum="30" canModify="false">
           <PinFunctions select=""/>
           <Comment/>
         </Pin>
-        <Pin pinNum="31" group="GPIO">
+        <Pin pinNum="31" canModify="false">
+          <PinFunctions select=""/>
+          <Comment/>
+        </Pin>
+        <Pin pinNum="32" group="GPIO">
           <PinFunctions select="GPIO31">
             <Func deviceId="GPIO31" csi_pin_name="GPIO31">GPIO31</Func>
             <Func deviceId="SPIFC">SPIFC_CLK</Func>
@@ -394,7 +394,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="32" group="GPIO">
+        <Pin pinNum="33" group="GPIO">
           <PinFunctions select="GPIO32">
             <Func deviceId="GPIO32" csi_pin_name="GPIO32">GPIO32</Func>
             <Func deviceId="SPIFC">SPIFC_CS</Func>
@@ -403,7 +403,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="33" group="GPIO">
+        <Pin pinNum="34" group="GPIO">
           <PinFunctions select="GPIO33">
             <Func deviceId="GPIO33" csi_pin_name="GPIO33">GPIO33</Func>
             <Func deviceId="SPIFC">SPIFC_DATA0</Func>
@@ -412,7 +412,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="34" group="GPIO">
+        <Pin pinNum="35" group="GPIO">
           <PinFunctions select="GPIO34">
             <Func deviceId="GPIO34" csi_pin_name="GPIO34">GPIO34</Func>
             <Func deviceId="SPIFC">SPIFC_DATA1</Func>
@@ -422,7 +422,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="35" group="GPIO">
+        <Pin pinNum="36" group="GPIO">
           <PinFunctions select="GPIO35">
             <Func deviceId="GPIO35" csi_pin_name="GPIO35">GPIO35</Func>
             <Func deviceId="SPIFC">SPIFC_DATA2</Func>
@@ -431,35 +431,35 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="36" group="GPIO">
+        <Pin pinNum="37" group="GPIO">
           <PinFunctions select="GPIO36">
             <Func deviceId="GPIO36" csi_pin_name="GPIO36">GPIO36</Func>
             <Func deviceId="SPIFC">SPIFC_DATA3</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="37" group="GPIO">
+        <Pin pinNum="38" group="GPIO">
           <PinFunctions select="SIM_RST">
             <Func deviceId="GPIO37" csi_pin_name="GPIO37">GPIO37</Func>
             <Func deviceId="SIM">SIM_RST</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="38" group="GPIO">
+        <Pin pinNum="39" group="GPIO">
           <PinFunctions select="SIM_CLK">
             <Func deviceId="GPIO38" csi_pin_name="GPIO38">GPIO38</Func>
             <Func deviceId="SIM">SIM_CLK</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="39" group="GPIO">
+        <Pin pinNum="40" group="GPIO">
           <PinFunctions select="SIM_DATA">
             <Func deviceId="GPIO39" csi_pin_name="GPIO39">GPIO39</Func>
             <Func deviceId="SIM">SIM_DATA</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="40" group="GPIO">
+        <Pin pinNum="41" group="GPIO">
           <PinFunctions select="GPIO40">
             <Func deviceId="GPIO40" csi_pin_name="GPIO40">GPIO40</Func>
             <Func deviceId="LTE">LTE_TPU_OUT0_0</Func>
@@ -467,7 +467,7 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="41" group="GPIO">
+        <Pin pinNum="42" group="GPIO">
           <PinFunctions select="GPIO41">
             <Func deviceId="GPIO41" csi_pin_name="GPIO41">GPIO41</Func>
             <Func deviceId="LTE">LTE_TPU_OUT0_1</Func>
@@ -475,78 +475,78 @@
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="42" canModify="false">
-          <PinFunctions select=""/>
-          <Comment/>
-        </Pin>
         <Pin pinNum="43" canModify="false">
           <PinFunctions select=""/>
           <Comment/>
         </Pin>
-        <Pin pinNum="44" group="GPIO">
+        <Pin pinNum="44" canModify="false">
+          <PinFunctions select=""/>
+          <Comment/>
+        </Pin>
+        <Pin pinNum="45" group="GPIO">
           <PinFunctions select="GPIO44">
             <Func deviceId="GPIO44" csi_pin_name="GPIO44">GPIO44</Func>
             <Func deviceId="LTE">LTE_TPU_OUT0_2</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="45" group="GPIO">
+        <Pin pinNum="46" group="GPIO">
           <PinFunctions select="GPIO45">
             <Func deviceId="GPIO45" csi_pin_name="GPIO45">GPIO45</Func>
             <Func deviceId="LTE">LTE_TPU_OUT0_3</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="46" group="GPIO">
+        <Pin pinNum="47" group="GPIO">
           <PinFunctions select="GPIO46">
             <Func deviceId="GPIO46" csi_pin_name="GPIO46">GPIO46</Func>
             <Func deviceId="LTE">LTE_TPU_OUT0_4</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="47" group="GPIO">
+        <Pin pinNum="48" group="GPIO">
           <PinFunctions select="GPIO47">
             <Func deviceId="GPIO47" csi_pin_name="GPIO47">GPIO47</Func>
             <Func deviceId="LTE">LTE_TPU_OUT0_5</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="48" group="GPIO">
+        <Pin pinNum="49" group="GPIO">
           <PinFunctions select="GPIO48">
             <Func deviceId="GPIO48" csi_pin_name="GPIO48">GPIO48</Func>
             <Func deviceId="LTE">LTE_TPU_OUT0_6</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="49" group="GPIO">
+        <Pin pinNum="50" group="GPIO">
           <PinFunctions select="GPIO49">
             <Func deviceId="GPIO49" csi_pin_name="GPIO49">GPIO49</Func>
             <Func deviceId="LTE">LTE_TPU_OUT0_7</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="50" group="GPIO">
+        <Pin pinNum="51" group="GPIO">
           <PinFunctions select="GPIO50">
             <Func deviceId="GPIO50" csi_pin_name="GPIO50">GPIO50</Func>
             <Func deviceId="LTE">LTE_TPU_OUT0_8</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="51" canModify="false">
-          <PinFunctions select=""/>
-          <Comment/>
-        </Pin>
         <Pin pinNum="52" canModify="false">
           <PinFunctions select=""/>
           <Comment/>
         </Pin>
-        <Pin pinNum="53" group="GPIO">
+        <Pin pinNum="53" canModify="false">
+          <PinFunctions select=""/>
+          <Comment/>
+        </Pin>
+        <Pin pinNum="54" group="GPIO">
           <PinFunctions select="GPIO53">
             <Func deviceId="GPIO53" csi_pin_name="GPIO53">GPIO53</Func>
           </PinFunctions>
           <Comment/>
         </Pin>
-        <Pin pinNum="54" group="GPIO">
+        <Pin pinNum="55" group="GPIO">
           <PinFunctions select="GPIO54">
             <Func deviceId="GPIO54" csi_pin_name="GPIO54">GPIO54</Func>
           </PinFunctions>
