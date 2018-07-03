@@ -47,7 +47,7 @@
     <ClCompile Include="cJSON.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="chip_config_dll.cpp">
+    <ClCompile Include="chip_config.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

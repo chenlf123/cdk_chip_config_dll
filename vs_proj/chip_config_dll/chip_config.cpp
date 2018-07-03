@@ -37,6 +37,7 @@ const wxString LOG_FILE = wxT("debug.log");
 #endif
 
 const wxString PIN_NUM = wxT("pin_num");
+const wxString PIN_NAME = wxT("pin_name");
 const wxString PIN_SELECT = wxT("pin_select");
 const wxString PIN_FUNC = wxT("pin_func");
 // 这是导出变量的一个示例
@@ -66,15 +67,8 @@ wxString thisDllDirPath()
     {
         GetModuleFileNameW( hm, path, sizeof(path) );
         thisPath = wxFileName(path).GetPath();
-        //PathRemoveFileSpecW( path );
-        //thisPath = CStringW( path );
-        //if( !thisPath.IsEmpty() &&
-        //    thisPath.GetAt( thisPath.GetLength()-1 ) != '\\' )
-        //    thisPath += L"\\";
     }
-    //else if( _DEBUG ) std::wcout << L"GetModuleHandle Error: " << GetLastError() << std::endl;
 
-    //if( _DEBUG ) std::wcout << L"thisDllDirPath: [" << CStringW::PCXSTR( thisPath ) << L"]" << std::endl;
     return thisPath;
 }
 typedef std::shared_ptr<JSONRoot> JsonRootPtr;
@@ -96,7 +90,6 @@ extern "C" {
 #endif
             return -1;
         }
-
         file.Seek(0);
 
         wxFileOffset filesize = file.Length();
@@ -112,26 +105,27 @@ extern "C" {
             return -1;
         }
 		file.Close();
+
 //		log_file.Write(json_content);
 
         return 0;
     }
     int map_pin_fun(wxString pinNum, wxString select, wxString *pin_num, wxString *pin_func)
     {
-#if DEBUG
-		wxString log = "";
-#endif
         wxString input(json_content, wxConvUTF8);
         JSONRoot jsonPinInfo(input);
         JSONElement rootPin = jsonPinInfo.toElement();
         JSONElement pin = rootPin.firstChild();
-        wxString PinNum, PinSelect, PinFunc;
+        wxString PinNum, PinName, PinSelect, PinFunc;
 
-        while (pin.isOk()) {
+		while (pin.isOk()) {
             JSONElement property = pin.firstChild();
             while (property.isOk()) {
                 if (property.getName() == PIN_NUM) {
                     PinNum = property.toString();
+                }
+                if (property.getName() == PIN_NAME) {
+                    PinName = property.toString();
                 }
                 else if (property.getName() == PIN_SELECT) {
                     PinSelect = property.toString();
@@ -142,19 +136,9 @@ extern "C" {
                 property = pin.nextChild();
             }
 
-#if DEBUG
-            log = "pinNum: " + pinNum + "\n";
-            log << "PinNum:" + PinNum + "\n";
-			log_file.Write(log);
-#endif
             if (pinNum == PinNum) {
                 if (select == PinSelect) {
-#if DEBUG
-                    log << "select2: " + select + "\n";
-                    log << "PinSelect2:" + PinSelect + "\n";
-                    log_file.Write(log);
-#endif
-                    *pin_num = PinFunc.BeforeFirst('_');
+                    *pin_num = PinName;
                     *pin_func = PinFunc;
                     return 0;
                 }
@@ -194,7 +178,7 @@ extern "C" {
         JSONElement rootPin = jsonPinInfo.toElement();
         JSONElement pin = rootPin.firstChild();
         wxString pinNum, select, direct, pullup, dubounce;
-        wxString pin_num, pin_func;
+        wxString pin_name, pin_func;
         wxString funcBody = "";
 
         while (pin.isOk()) {
@@ -218,11 +202,11 @@ extern "C" {
 
                 property = pin.nextChild();
             }
-            if (map_pin_fun(pinNum, select, &pin_num, &pin_func) != 0) {
+            if (map_pin_fun(pinNum, select, &pin_name, &pin_func) != 0) {
                 pin = rootPin.nextChild();
                 continue;
             }
-             funcBody << wxT("\tdrv_pinmux_config(") + pin_num + wxT(", ") + pin_func + wxT(");");
+             funcBody << wxT("\tdrv_pinmux_config(") + pin_name + wxT(", ") + pin_func + wxT(");");
              funcBody << "\n";
             pin = rootPin.nextChild();
         }
@@ -245,4 +229,39 @@ extern "C" {
 
         return (char*)jstr->mb_str(wxConvUTF8).data();
     }
+
+	CHIP_CONFIG_DLL_API char * system_clock_code_gen(char* jsonStr)
+	{
+        wxString input(jsonStr, wxConvUTF8);
+        JSONRoot jsonPinInfo(input);
+        JSONElement rootDev = jsonPinInfo.toElement();
+        JSONElement dev = rootDev.firstChild();
+		wxString funcBody = "";
+		wxString clock_source, freq;
+
+		while (dev.isOk()) {
+			if (dev.getName() == "Clock source") {
+				if (dev.toString() == "External RC") {
+				  	clock_source = "EHS_CLK";
+				} else if (dev.toString() == "Internal RC") {
+				    clock_source = "IHS_CLK";
+				}
+			} else if (dev.getName() == "Freq (MHz)") {
+				freq = dev.toString();
+			}
+			dev = rootDev.nextChild();
+		}
+		funcBody << wxT("\tdrv_set_sys_freq(") + clock_source + wxT(", ") + "CLK_" + freq + "M" + wxT(");");
+		funcBody << "\n";
+
+        // prepare to generate the code
+        JSONRoot *root = new JSONRoot(cJSON_Object);
+        wxString funcName = "system_clock_init";
+        root->toElement().addProperty(funcName, funcBody);
+        jsons.push_back(JsonRootPtr(root));
+        wxString *jstr = new wxString(root->toElement().format());
+        jsonStrs.push_back(wxStringPtr(jstr));
+
+        return (char*)jstr->mb_str(wxConvUTF8).data();
+	}
 }
