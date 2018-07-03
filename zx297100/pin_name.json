@@ -1,1366 +1,1639 @@
 [
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "GPIO0",
         "pin_func"   : "GPIO0_GPIO0"
     },
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "AON_TEST_PIN0",
         "pin_func"   : "GPIO0_AON_TEST_PIN0"
     },
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "LPUART_CTS",
         "pin_func"   : "GPIO0_LPUART_CTS"
     },
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "LPUART_RTS",
         "pin_func"   : "GPIO0_LPUART_RTS"
     },
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "I2S_WS",
         "pin_func"   : "GPIO0_I2S_WS"
     },
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "TIM0_ETR",
         "pin_func"   : "GPIO0_TIM0_ETR"
     },
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "UART2_RXD",
         "pin_func"   : "GPIO0_UART2_RXD"
     },
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "UART2_TXD",
         "pin_func"   : "GPIO0_UART2_TXD"
     },
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "UART0_RXD",
         "pin_func"   : "GPIO0_UART0_RXD"
     },
     {
         "pin_num"    : "1",
+		"pin_name"   : "GPIO0",
         "pin_select" : "UART0_TXD",
         "pin_func"   : "GPIO0_UART0_TXD"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "GPIO1",
         "pin_func"   : "GPIO1_GPIO1"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "AON_TEST_PIN1",
         "pin_func"   : "GPIO1_AON_TEST_PIN1"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "LPUART_RXD",
         "pin_func"   : "GPIO1_LPUART_RXD"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "LPUART_TXD",
         "pin_func"   : "GPIO1_LPUART_TXD"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "I2S_CLK",
         "pin_func"   : "GPIO1_I2S_CLK"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "TIM0_CH0",
         "pin_func"   : "GPIO1_TIM0_CH0"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "ADC_TRIG",
         "pin_func"   : "GPIO1_ADC_TRIG"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "DAC_TRIG",
         "pin_func"   : "GPIO1_DAC_TRIG"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "UART0_TXD",
         "pin_func"   : "GPIO1_UART0_TXD"
     },
     {
         "pin_num"    : "2",
+		"pin_name"   : "GPIO1",
         "pin_select" : "UART0_RXD",
         "pin_func"   : "GPIO1_UART0_RXD"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "GPIO2",
         "pin_func"   : "GPIO2_GPIO2"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "AON_TEST_PIN2",
         "pin_func"   : "GPIO2_AON_TEST_PIN2"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "LPUART_TXD",
         "pin_func"   : "GPIO2_LPUART_TXD"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "LPUART_RXD",
         "pin_func"   : "GPIO2_LPUART_RXD"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "I2S_DIN",
         "pin_func"   : "GPIO2_I2S_DIN"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "TIM0_CH1",
         "pin_func"   : "GPIO2_TIM0_CH1"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "DAC_TRIG",
         "pin_func"   : "GPIO2_DAC_TRIG"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "ADC_TRIG",
         "pin_func"   : "GPIO2_ADC_TRIG"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "UART0_CTS",
         "pin_func"   : "GPIO2_UART0_CTS"
     },
     {
         "pin_num"    : "3",
+		"pin_name"   : "GPIO2",
         "pin_select" : "UART0_RTS",
         "pin_func"   : "GPIO2_UART0_RTS"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "GPIO3",
         "pin_func"   : "GPIO3_GPIO3"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "AON_TEST_PIN3",
         "pin_func"   : "GPIO3_AON_TEST_PIN3"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "LPUART_RTS",
         "pin_func"   : "GPIO3_LPUART_RTS"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "LPUART_CTS",
         "pin_func"   : "GPIO3_LPUART_CTS"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "I2S_DOUT",
         "pin_func"   : "GPIO3_I2S_DOUT"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "TIM0_CH2",
         "pin_func"   : "GPIO3_TIM0_CH2"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "UART2_TXD",
         "pin_func"   : "GPIO3_UART2_TXD"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "UART2_RXD",
         "pin_func"   : "GPIO3_UART2_RXD"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "UART0_RTS",
         "pin_func"   : "GPIO3_UART0_RTS"
     },
     {
         "pin_num"    : "4",
+		"pin_name"   : "GPIO3",
         "pin_select" : "UART0_CTS",
         "pin_func"   : "GPIO3_UART0_CTS"
     },
     {
         "pin_num"    : "5",
+		"pin_name"   : "GPIO4",
         "pin_select" : "GPIO4",
         "pin_func"   : "GPIO4_GPIO4"
     },
     {
         "pin_num"    : "5",
+		"pin_name"   : "GPIO4",
         "pin_select" : "AON_TEST_PIN4",
         "pin_func"   : "GPIO4_AON_TEST_PIN4"
     },
     {
         "pin_num"    : "5",
+		"pin_name"   : "GPIO4",
         "pin_select" : "LPTIM_OUT",
         "pin_func"   : "GPIO4_LPTIM_OUT"
     },
     {
         "pin_num"    : "5",
+		"pin_name"   : "GPIO4",
         "pin_select" : "SCL1",
         "pin_func"   : "GPIO4_SCL1"
     },
     {
         "pin_num"    : "5",
+		"pin_name"   : "GPIO4",
         "pin_select" : "TIM0_CH3",
         "pin_func"   : "GPIO4_TIM0_CH3"
     },
     {
         "pin_num"    : "5",
+		"pin_name"   : "GPIO4",
         "pin_select" : "UART0_RXD",
         "pin_func"   : "GPIO4_UART0_RXD"
     },
     {
         "pin_num"    : "5",
+		"pin_name"   : "GPIO4",
         "pin_select" : "UART0_TXD",
         "pin_func"   : "GPIO4_UART0_TXD"
     },
     {
         "pin_num"    : "5",
+		"pin_name"   : "GPIO4",
         "pin_select" : "SIRIN",
         "pin_func"   : "GPIO4_SIRIN"
     },
     {
         "pin_num"    : "6",
+		"pin_name"   : "GPIO5",
         "pin_select" : "GPIO5",
         "pin_func"   : "GPIO5_GPIO5"
     },
     {
         "pin_num"    : "6",
+		"pin_name"   : "GPIO5",
         "pin_select" : "AON_TEST_PIN5",
         "pin_func"   : "GPIO5_AON_TEST_PIN5"
     },
     {
         "pin_num"    : "6",
+		"pin_name"   : "GPIO5",
         "pin_select" : "LPTIM_ETR",
         "pin_func"   : "GPIO5_LPTIM_ETR"
     },
     {
         "pin_num"    : "6",
+		"pin_name"   : "GPIO5",
         "pin_select" : "SDA1",
         "pin_func"   : "GPIO5_SDA1"
     },
     {
         "pin_num"    : "6",
+		"pin_name"   : "GPIO5",
         "pin_select" : "TIM0_ETR",
         "pin_func"   : "GPIO5_TIM0_ETR"
     },
     {
         "pin_num"    : "6",
+		"pin_name"   : "GPIO5",
         "pin_select" : "UART0_TXD",
         "pin_func"   : "GPIO5_UART0_TXD"
     },
     {
         "pin_num"    : "6",
+		"pin_name"   : "GPIO5",
         "pin_select" : "UART0_RXD",
         "pin_func"   : "GPIO5_UART0_RXD"
     },
     {
         "pin_num"    : "6",
+		"pin_name"   : "GPIO5",
         "pin_select" : "NSIROUT",
         "pin_func"   : "GPIO5_NSIROUT"
     },
     {
         "pin_num"    : "7",
+		"pin_name"   : "GPIO6",
         "pin_select" : "GPIO6",
         "pin_func"   : "GPIO6_GPIO6"
     },
     {
         "pin_num"    : "7",
+		"pin_name"   : "GPIO6",
         "pin_select" : "AON_TEST_PIN6",
         "pin_func"   : "GPIO6_AON_TEST_PIN6"
     },
     {
         "pin_num"    : "7",
+		"pin_name"   : "GPIO6",
         "pin_select" : "LPTIM_CH0",
         "pin_func"   : "GPIO6_LPTIM_CH0"
     },
     {
         "pin_num"    : "7",
+		"pin_name"   : "GPIO6",
         "pin_select" : "EXT_INT0",
         "pin_func"   : "GPIO6_EXT_INT0"
     },
     {
         "pin_num"    : "7",
+		"pin_name"   : "GPIO6",
         "pin_select" : "SCL0",
         "pin_func"   : "GPIO6_SCL0"
     },
     {
         "pin_num"    : "7",
+		"pin_name"   : "GPIO6",
         "pin_select" : "TIM0_CH2",
         "pin_func"   : "GPIO6_TIM0_CH2"
     },
     {
         "pin_num"    : "7",
+		"pin_name"   : "GPIO6",
         "pin_select" : "UART0_CTS",
         "pin_func"   : "GPIO6_UART0_CTS"
     },
     {
         "pin_num"    : "7",
+		"pin_name"   : "GPIO6",
         "pin_select" : "UART0_RTS",
         "pin_func"   : "GPIO6_UART0_RTS"
     },
     {
         "pin_num"    : "7",
+		"pin_name"   : "GPIO6",
         "pin_select" : "COMP_OUT",
         "pin_func"   : "GPIO6_COMP_OUT"
     },
     {
         "pin_num"    : "8",
+		"pin_name"   : "GPIO7",
         "pin_select" : "GPIO7",
         "pin_func"   : "GPIO7_GPIO7"
     },
     {
         "pin_num"    : "8",
+		"pin_name"   : "GPIO7",
         "pin_select" : "AON_TEST_PIN7",
         "pin_func"   : "GPIO7_AON_TEST_PIN7"
     },
     {
         "pin_num"    : "8",
+		"pin_name"   : "GPIO7",
         "pin_select" : "LPTIM_CH1",
         "pin_func"   : "GPIO7_LPTIM_CH1"
     },
     {
         "pin_num"    : "8",
+		"pin_name"   : "GPIO7",
         "pin_select" : "EXT_INT1",
         "pin_func"   : "GPIO7_EXT_INT1"
     },
     {
         "pin_num"    : "8",
+		"pin_name"   : "GPIO7",
         "pin_select" : "SDA0",
         "pin_func"   : "GPIO7_SDA0"
     },
     {
         "pin_num"    : "8",
+		"pin_name"   : "GPIO7",
         "pin_select" : "TIM0_CH3",
         "pin_func"   : "GPIO7_TIM0_CH3"
     },
     {
         "pin_num"    : "8",
+		"pin_name"   : "GPIO7",
         "pin_select" : "UART0_RTS",
         "pin_func"   : "GPIO7_UART0_RTS"
     },
     {
         "pin_num"    : "8",
+		"pin_name"   : "GPIO7",
         "pin_select" : "UART0_CTS",
         "pin_func"   : "GPIO7_UART0_CTS"
     },
     {
         "pin_num"    : "8",
+		"pin_name"   : "GPIO7",
         "pin_select" : "I2S_MCLK",
         "pin_func"   : "GPIO7_I2S_MCLK"
     },
     {
         "pin_num"    : "9",
+		"pin_name"   : "GPIO8",
         "pin_select" : "I2S_WS",
         "pin_func"   : "GPIO8_I2S_WS"
     },
     {
         "pin_num"    : "9",
+		"pin_name"   : "GPIO8",
         "pin_select" : "SSP0_CS",
         "pin_func"   : "GPIO8_SSP0_CS"
     },
     {
         "pin_num"    : "9",
+		"pin_name"   : "GPIO8",
         "pin_select" : "TIM1_ETR",
         "pin_func"   : "GPIO8_TIM1_ETR"
     },
     {
         "pin_num"    : "9",
+		"pin_name"   : "GPIO8",
         "pin_select" : "GPIO8",
         "pin_func"   : "GPIO8_GPIO8"
     },
     {
         "pin_num"    : "9",
+		"pin_name"   : "GPIO8",
         "pin_select" : "DONGLE_SER_I",
         "pin_func"   : "GPIO8_DONGLE_SER_I"
     },
     {
         "pin_num"    : "9",
+		"pin_name"   : "GPIO8",
         "pin_select" : "ADC_TRIG",
         "pin_func"   : "GPIO8_ADC_TRIG"
     },
     {
         "pin_num"    : "10",
+		"pin_name"   : "GPIO9",
         "pin_select" : "I2S_CLK",
         "pin_func"   : "GPIO9_I2S_CLK"
     },
     {
         "pin_num"    : "10",
+		"pin_name"   : "GPIO9",
         "pin_select" : "SSP0_CLK",
         "pin_func"   : "GPIO9_SSP0_CLK"
     },
     {
         "pin_num"    : "10",
+		"pin_name"   : "GPIO9",
         "pin_select" : "TIM1_CH0",
         "pin_func"   : "GPIO9_TIM1_CH0"
     },
     {
         "pin_num"    : "10",
+		"pin_name"   : "GPIO9",
         "pin_select" : "GPIO9",
         "pin_func"   : "GPIO9_GPIO9"
     },
     {
         "pin_num"    : "10",
+		"pin_name"   : "GPIO9",
         "pin_select" : "DONGLE_SER_Q",
         "pin_func"   : "GPIO9_DONGLE_SER_Q"
     },
     {
         "pin_num"    : "10",
+		"pin_name"   : "GPIO9",
         "pin_select" : "I2S_MCLK",
         "pin_func"   : "GPIO9_I2S_MCLK"
     },
     {
         "pin_num"    : "11",
+		"pin_name"   : "GPIO10",
         "pin_select" : "I2S_DIN",
         "pin_func"   : "GPIO10_I2S_DIN"
     },
     {
         "pin_num"    : "11",
+		"pin_name"   : "GPIO10",
         "pin_select" : "SSP0_RXD",
         "pin_func"   : "GPIO10_SSP0_RXD"
     },
     {
         "pin_num"    : "11",
+		"pin_name"   : "GPIO10",
         "pin_select" : "TIM1_CH1",
         "pin_func"   : "GPIO10_TIM1_CH1"
     },
     {
         "pin_num"    : "11",
+		"pin_name"   : "GPIO10",
         "pin_select" : "GPIO10",
         "pin_func"   : "GPIO10_GPIO10"
     },
     {
         "pin_num"    : "11",
+		"pin_name"   : "GPIO10",
         "pin_select" : "UART2_TXD",
         "pin_func"   : "GPIO10_UART2_TXD"
     },
     {
         "pin_num"    : "11",
+		"pin_name"   : "GPIO10",
         "pin_select" : "UART2_RXD",
         "pin_func"   : "GPIO10_UART2_RXD"
     },
     {
         "pin_num"    : "11",
+		"pin_name"   : "GPIO10",
         "pin_select" : "DAC_TRIG",
         "pin_func"   : "GPIO10_DAC_TRIG"
     },
     {
         "pin_num"    : "11",
+		"pin_name"   : "GPIO10",
         "pin_select" : "DONGLE_SER_FP",
         "pin_func"   : "GPIO10_DONGLE_SER_FP"
     },
     {
         "pin_num"    : "12",
+		"pin_name"   : "GPIO11",
         "pin_select" : "I2S_DOUT",
         "pin_func"   : "GPIO11_I2S_DOUT"
     },
     {
         "pin_num"    : "12",
+		"pin_name"   : "GPIO11",
         "pin_select" : "SSP0_TXD",
         "pin_func"   : "GPIO11_SSP0_TXD"
     },
     {
         "pin_num"    : "12",
+		"pin_name"   : "GPIO11",
         "pin_select" : "TIM1_CH2",
         "pin_func"   : "GPIO11_TIM1_CH2"
     },
     {
         "pin_num"    : "12",
+		"pin_name"   : "GPIO11",
         "pin_select" : "GPIO11",
         "pin_func"   : "GPIO11_GPIO11"
     },
     {
         "pin_num"    : "12",
+		"pin_name"   : "GPIO11",
         "pin_select" : "UART2_RXD",
         "pin_func"   : "GPIO11_UART2_RXD"
     },
     {
         "pin_num"    : "12",
+		"pin_name"   : "GPIO11",
         "pin_select" : "UART2_TXD",
         "pin_func"   : "GPIO11_UART2_TXD"
     },
     {
         "pin_num"    : "12",
+		"pin_name"   : "GPIO11",
         "pin_select" : "MCO",
         "pin_func"   : "GPIO11_MCO"
     },
     {
         "pin_num"    : "12",
+		"pin_name"   : "GPIO11",
         "pin_select" : "DONGLE_SER_CLK",
         "pin_func"   : "GPIO11_DONGLE_SER_CLK"
     },
     {
         "pin_num"    : "13",
+		"pin_name"   : "GPIO12",
         "pin_select" : "SCL1",
         "pin_func"   : "GPIO12_SCL1"
     },
     {
         "pin_num"    : "13",
+		"pin_name"   : "GPIO12",
         "pin_select" : "SSP1_CS",
         "pin_func"   : "GPIO12_SSP1_CS"
     },
     {
         "pin_num"    : "13",
+		"pin_name"   : "GPIO12",
         "pin_select" : "TIM1_CH3",
         "pin_func"   : "GPIO12_TIM1_CH3"
     },
     {
         "pin_num"    : "13",
+		"pin_name"   : "GPIO12",
         "pin_select" : "GPIO12",
         "pin_func"   : "GPIO12_GPIO12"
     },
     {
         "pin_num"    : "13",
+		"pin_name"   : "GPIO12",
         "pin_select" : "UART0_TXD",
         "pin_func"   : "GPIO12_UART0_TXD"
     },
     {
         "pin_num"    : "13",
+		"pin_name"   : "GPIO12",
         "pin_select" : "UART0_RXD",
         "pin_func"   : "GPIO12_UART0_RXD"
     },
     {
         "pin_num"    : "13",
+		"pin_name"   : "GPIO12",
         "pin_select" : "TESTPIN0",
         "pin_func"   : "GPIO12_TESTPIN0"
     },
     {
         "pin_num"    : "13",
+		"pin_name"   : "GPIO12",
         "pin_select" : "SIRIN",
         "pin_func"   : "GPIO12_SIRIN"
     },
     {
         "pin_num"    : "14",
+		"pin_name"   : "GPIO13",
         "pin_select" : "SDA1",
         "pin_func"   : "GPIO13_SDA1"
     },
     {
         "pin_num"    : "14",
+		"pin_name"   : "GPIO13",
         "pin_select" : "SSP1_CLK",
         "pin_func"   : "GPIO13_SSP1_CLK"
     },
     {
         "pin_num"    : "14",
+		"pin_name"   : "GPIO13",
         "pin_select" : "TIM0_ETR",
         "pin_func"   : "GPIO13_TIM0_ETR"
     },
     {
         "pin_num"    : "14",
+		"pin_name"   : "GPIO13",
         "pin_select" : "GPIO13",
         "pin_func"   : "GPIO13_GPIO13"
     },
     {
         "pin_num"    : "14",
+		"pin_name"   : "GPIO13",
         "pin_select" : "UART0_RXD",
         "pin_func"   : "GPIO13_UART0_RXD"
     },
     {
         "pin_num"    : "14",
+		"pin_name"   : "GPIO13",
         "pin_select" : "UART0_TXD",
         "pin_func"   : "GPIO13_UART0_TXD"
     },
     {
         "pin_num"    : "14",
+		"pin_name"   : "GPIO13",
         "pin_select" : "EXT_INT2",
         "pin_func"   : "GPIO13_EXT_INT2"
     },
     {
         "pin_num"    : "14",
+		"pin_name"   : "GPIO13",
         "pin_select" : "NSIROUT",
         "pin_func"   : "GPIO13_NSIROUT"
     },
     {
         "pin_num"    : "15",
+		"pin_name"   : "GPIO14",
         "pin_select" : "SCL0",
         "pin_func"   : "GPIO14_SCL0"
     },
     {
         "pin_num"    : "15",
+		"pin_name"   : "GPIO14",
         "pin_select" : "SSP1_RXD",
         "pin_func"   : "GPIO14_SSP1_RXD"
     },
     {
         "pin_num"    : "15",
+		"pin_name"   : "GPIO14",
         "pin_select" : "TIM1_ETR",
         "pin_func"   : "GPIO14_TIM1_ETR"
     },
     {
         "pin_num"    : "15",
+		"pin_name"   : "GPIO14",
         "pin_select" : "GPIO14",
         "pin_func"   : "GPIO14_GPIO14"
     },
     {
         "pin_num"    : "15",
+		"pin_name"   : "GPIO14",
         "pin_select" : "UART0_RTS",
         "pin_func"   : "GPIO14_UART0_RTS"
     },
     {
         "pin_num"    : "15",
+		"pin_name"   : "GPIO14",
         "pin_select" : "UART0_CTS",
         "pin_func"   : "GPIO14_UART0_CTS"
     },
     {
         "pin_num"    : "15",
+		"pin_name"   : "GPIO14",
         "pin_select" : "EXT_INT3",
         "pin_func"   : "GPIO14_EXT_INT3"
     },
     {
         "pin_num"    : "15",
+		"pin_name"   : "GPIO14",
         "pin_select" : "TESTPIN1",
         "pin_func"   : "GPIO14_TESTPIN1"
     },
     {
         "pin_num"    : "16",
+		"pin_name"   : "GPIO15",
         "pin_select" : "SDA0",
         "pin_func"   : "GPIO15_SDA0"
     },
     {
         "pin_num"    : "16",
+		"pin_name"   : "GPIO15",
         "pin_select" : "SSP1_TXD",
         "pin_func"   : "GPIO15_SSP1_TXD"
     },
     {
         "pin_num"    : "16",
+		"pin_name"   : "GPIO15",
         "pin_select" : "MCO",
         "pin_func"   : "GPIO15_MCO"
     },
     {
         "pin_num"    : "16",
+		"pin_name"   : "GPIO15",
         "pin_select" : "GPIO15",
         "pin_func"   : "GPIO15_GPIO15"
     },
     {
         "pin_num"    : "16",
+		"pin_name"   : "GPIO15",
         "pin_select" : "UART0_CTS",
         "pin_func"   : "GPIO15_UART0_CTS"
     },
     {
         "pin_num"    : "16",
+		"pin_name"   : "GPIO15",
         "pin_select" : "UART0_RTS",
         "pin_func"   : "GPIO15_UART0_RTS"
     },
     {
         "pin_num"    : "16",
+		"pin_name"   : "GPIO15",
         "pin_select" : "EXT_INT4",
         "pin_func"   : "GPIO15_EXT_INT4"
     },
     {
         "pin_num"    : "16",
+		"pin_name"   : "GPIO15",
         "pin_select" : "TESTPIN2",
         "pin_func"   : "GPIO15_TESTPIN2"
     },
     {
         "pin_num"    : "17",
+		"pin_name"   : "GPIO16",
         "pin_select" : "SCL0",
         "pin_func"   : "GPIO16_SCL0"
     },
     {
         "pin_num"    : "17",
+		"pin_name"   : "GPIO16",
         "pin_select" : "SSP1_CS",
         "pin_func"   : "GPIO16_SSP1_CS"
     },
     {
         "pin_num"    : "17",
+		"pin_name"   : "GPIO16",
         "pin_select" : "TIM1_CH0",
         "pin_func"   : "GPIO16_TIM1_CH0"
     },
     {
         "pin_num"    : "17",
+		"pin_name"   : "GPIO16",
         "pin_select" : "GPIO16",
         "pin_func"   : "GPIO16_GPIO16"
     },
     {
         "pin_num"    : "17",
+		"pin_name"   : "GPIO16",
         "pin_select" : "COMP_OUT",
         "pin_func"   : "GPIO16_COMP_OUT"
     },
     {
         "pin_num"    : "17",
+		"pin_name"   : "GPIO16",
         "pin_select" : "TESTPIN3",
         "pin_func"   : "GPIO16_TESTPIN3"
     },
     {
         "pin_num"    : "18",
+		"pin_name"   : "GPIO17",
         "pin_select" : "SDA0",
         "pin_func"   : "GPIO17_SDA0"
     },
     {
         "pin_num"    : "18",
+		"pin_name"   : "GPIO17",
         "pin_select" : "SSP1_CLK",
         "pin_func"   : "GPIO17_SSP1_CLK"
     },
     {
         "pin_num"    : "18",
+		"pin_name"   : "GPIO17",
         "pin_select" : "TIM1_CH1",
         "pin_func"   : "GPIO17_TIM1_CH1"
     },
     {
         "pin_num"    : "18",
+		"pin_name"   : "GPIO17",
         "pin_select" : "GPIO17",
         "pin_func"   : "GPIO17_GPIO17"
     },
     {
         "pin_num"    : "18",
+		"pin_name"   : "GPIO17",
         "pin_select" : "ADC_TRIG",
         "pin_func"   : "GPIO17_ADC_TRIG"
     },
     {
         "pin_num"    : "18",
+		"pin_name"   : "GPIO17",
         "pin_select" : "TESTPIN4",
         "pin_func"   : "GPIO17_TESTPIN4"
     },
     {
         "pin_num"    : "18",
+		"pin_name"   : "GPIO17",
         "pin_select" : "I2S_MCLK",
         "pin_func"   : "GPIO17_I2S_MCLK"
     },
     {
         "pin_num"    : "19",
+		"pin_name"   : "GPIO18",
         "pin_select" : "SCL1",
         "pin_func"   : "GPIO18_SCL1"
     },
     {
         "pin_num"    : "19",
+		"pin_name"   : "GPIO18",
         "pin_select" : "SSP1_RXD",
         "pin_func"   : "GPIO18_SSP1_RXD"
     },
     {
         "pin_num"    : "19",
+		"pin_name"   : "GPIO18",
         "pin_select" : "TIM1_CH2",
         "pin_func"   : "GPIO18_TIM1_CH2"
     },
     {
         "pin_num"    : "19",
+		"pin_name"   : "GPIO18",
         "pin_select" : "GPIO18",
         "pin_func"   : "GPIO18_GPIO18"
     },
     {
         "pin_num"    : "19",
+		"pin_name"   : "GPIO18",
         "pin_select" : "UART2_TXD",
         "pin_func"   : "GPIO18_UART2_TXD"
     },
     {
         "pin_num"    : "19",
+		"pin_name"   : "GPIO18",
         "pin_select" : "UART2_RXD",
         "pin_func"   : "GPIO18_UART2_RXD"
     },
     {
         "pin_num"    : "19",
+		"pin_name"   : "GPIO18",
         "pin_select" : "EXT_INT5",
         "pin_func"   : "GPIO18_EXT_INT5"
     },
     {
         "pin_num"    : "19",
+		"pin_name"   : "GPIO18",
         "pin_select" : "TESTPIN5",
         "pin_func"   : "GPIO18_TESTPIN5"
     },
     {
         "pin_num"    : "20",
+		"pin_name"   : "GPIO19",
         "pin_select" : "SDA1",
         "pin_func"   : "GPIO19_SDA1"
     },
     {
         "pin_num"    : "20",
+		"pin_name"   : "GPIO19",
         "pin_select" : "SSP1_TXD",
         "pin_func"   : "GPIO19_SSP1_TXD"
     },
     {
         "pin_num"    : "20",
+		"pin_name"   : "GPIO19",
         "pin_select" : "TIM1_CH3",
         "pin_func"   : "GPIO19_TIM1_CH3"
     },
     {
         "pin_num"    : "20",
+		"pin_name"   : "GPIO19",
         "pin_select" : "GPIO19",
         "pin_func"   : "GPIO19_GPIO19"
     },
     {
         "pin_num"    : "20",
+		"pin_name"   : "GPIO19",
         "pin_select" : "UART2_RXD",
         "pin_func"   : "GPIO19_UART2_RXD"
     },
     {
         "pin_num"    : "20",
+		"pin_name"   : "GPIO19",
         "pin_select" : "UART2_TXD",
         "pin_func"   : "GPIO19_UART2_TXD"
     },
     {
         "pin_num"    : "20",
+		"pin_name"   : "GPIO19",
         "pin_select" : "EXT_INT6",
         "pin_func"   : "GPIO19_EXT_INT6"
     },
     {
         "pin_num"    : "20",
+		"pin_name"   : "GPIO19",
         "pin_select" : "MCO",
         "pin_func"   : "GPIO19_MCO"
     },
     {
         "pin_num"    : "21",
+		"pin_name"   : "GPIO20",
         "pin_select" : "I2S_WS",
         "pin_func"   : "GPIO20_I2S_WS"
     },
     {
         "pin_num"    : "21",
+		"pin_name"   : "GPIO20",
         "pin_select" : "SSP0_CS",
         "pin_func"   : "GPIO20_SSP0_CS"
     },
     {
         "pin_num"    : "21",
+		"pin_name"   : "GPIO20",
         "pin_select" : "TIM0_CH0",
         "pin_func"   : "GPIO20_TIM0_CH0"
     },
     {
         "pin_num"    : "21",
+		"pin_name"   : "GPIO20",
         "pin_select" : "GPIO20",
         "pin_func"   : "GPIO20_GPIO20"
     },
     {
         "pin_num"    : "21",
+		"pin_name"   : "GPIO20",
         "pin_select" : "UART0_TXD",
         "pin_func"   : "GPIO20_UART0_TXD"
     },
     {
         "pin_num"    : "21",
+		"pin_name"   : "GPIO20",
         "pin_select" : "UART0_RXD",
         "pin_func"   : "GPIO20_UART0_RXD"
     },
     {
         "pin_num"    : "21",
+		"pin_name"   : "GPIO20",
         "pin_select" : "EXT_INT7",
         "pin_func"   : "GPIO20_EXT_INT7"
     },
     {
         "pin_num"    : "21",
+		"pin_name"   : "GPIO20",
         "pin_select" : "SIRIN",
         "pin_func"   : "GPIO20_SIRIN"
     },
     {
         "pin_num"    : "22",
+		"pin_name"   : "GPIO21",
         "pin_select" : "I2S_CLK",
         "pin_func"   : "GPIO21_I2S_CLK"
     },
     {
         "pin_num"    : "22",
+		"pin_name"   : "GPIO21",
         "pin_select" : "SSP0_CLK",
         "pin_func"   : "GPIO21_SSP0_CLK"
     },
     {
         "pin_num"    : "22",
+		"pin_name"   : "GPIO21",
         "pin_select" : "TIM0_CH1",
         "pin_func"   : "GPIO21_TIM0_CH1"
     },
     {
         "pin_num"    : "22",
+		"pin_name"   : "GPIO21",
         "pin_select" : "GPIO21",
         "pin_func"   : "GPIO21_GPIO21"
     },
     {
         "pin_num"    : "22",
+		"pin_name"   : "GPIO21",
         "pin_select" : "UART0_RXD",
         "pin_func"   : "GPIO21_UART0_RXD"
     },
     {
         "pin_num"    : "22",
+		"pin_name"   : "GPIO21",
         "pin_select" : "UART0_TXD",
         "pin_func"   : "GPIO21_UART0_TXD"
     },
     {
         "pin_num"    : "22",
+		"pin_name"   : "GPIO21",
         "pin_select" : "MCO",
         "pin_func"   : "GPIO21_MCO"
     },
     {
         "pin_num"    : "22",
+		"pin_name"   : "GPIO21",
         "pin_select" : "NSIROUT",
         "pin_func"   : "GPIO21_NSIROUT"
     },
     {
         "pin_num"    : "23",
+		"pin_name"   : "GPIO22",
         "pin_select" : "I2S_DIN",
         "pin_func"   : "GPIO22_I2S_DIN"
     },
     {
         "pin_num"    : "23",
+		"pin_name"   : "GPIO22",
         "pin_select" : "SSP0_RXD",
         "pin_func"   : "GPIO22_SSP0_RXD"
     },
     {
         "pin_num"    : "23",
+		"pin_name"   : "GPIO22",
         "pin_select" : "TIM0_CH2",
         "pin_func"   : "GPIO22_TIM0_CH2"
     },
     {
         "pin_num"    : "23",
+		"pin_name"   : "GPIO22",
         "pin_select" : "GPIO22",
         "pin_func"   : "GPIO22_GPIO22"
     },
     {
         "pin_num"    : "23",
+		"pin_name"   : "GPIO22",
         "pin_select" : "UART0_RTS",
         "pin_func"   : "GPIO22_UART0_RTS"
     },
     {
         "pin_num"    : "23",
+		"pin_name"   : "GPIO22",
         "pin_select" : "UART0_CTS",
         "pin_func"   : "GPIO22_UART0_CTS"
     },
     {
         "pin_num"    : "23",
+		"pin_name"   : "GPIO22",
         "pin_select" : "TESTPIN6",
         "pin_func"   : "GPIO22_TESTPIN6"
     },
     {
         "pin_num"    : "23",
+		"pin_name"   : "GPIO22",
         "pin_select" : "DAC_TRIG",
         "pin_func"   : "GPIO22_DAC_TRIG"
     },
     {
         "pin_num"    : "24",
+		"pin_name"   : "GPIO22",
         "pin_select" : "I2S_DOUT",
         "pin_func"   : "GPIO23_I2S_DOUT"
     },
     {
         "pin_num"    : "24",
+		"pin_name"   : "GPIO23",
         "pin_select" : "SSP0_TXD",
         "pin_func"   : "GPIO23_SSP0_TXD"
     },
     {
         "pin_num"    : "24",
+		"pin_name"   : "GPIO23",
         "pin_select" : "TIM0_CH3",
         "pin_func"   : "GPIO23_TIM0_CH3"
     },
     {
         "pin_num"    : "24",
+		"pin_name"   : "GPIO23",
         "pin_select" : "GPIO23",
         "pin_func"   : "GPIO23_GPIO23"
     },
     {
         "pin_num"    : "24",
+		"pin_name"   : "GPIO23",
         "pin_select" : "UART0_CTS",
         "pin_func"   : "GPIO23_UART0_CTS"
     },
     {
         "pin_num"    : "24",
+		"pin_name"   : "GPIO23",
         "pin_select" : "UART0_RTS",
         "pin_func"   : "GPIO23_UART0_RTS"
     },
     {
         "pin_num"    : "24",
+		"pin_name"   : "GPIO23",
         "pin_select" : "TESTPIN7",
         "pin_func"   : "GPIO23_TESTPIN7"
     },
     {
         "pin_num"    : "24",
+		"pin_name"   : "GPIO23",
         "pin_select" : "M0_JTAG_TCK",
         "pin_func"   : "GPIO24_M0_JTAG_TCK"
     },
     {
         "pin_num"    : "25",
+		"pin_name"   : "GPIO24",
         "pin_select" : "DSP_JTAG_TCK",
         "pin_func"   : "GPIO24_DSP_JTAG_TCK"
     },
     {
         "pin_num"    : "25",
+		"pin_name"   : "GPIO24",
         "pin_select" : "RF_JTAG_TCK",
         "pin_func"   : "GPIO24_RF_JTAG_TCK"
     },
     {
         "pin_num"    : "25",
+		"pin_name"   : "GPIO24",
         "pin_select" : "GPIO24",
         "pin_func"   : "GPIO24_GPIO24"
     },
     {
         "pin_num"    : "25",
+		"pin_name"   : "GPIO24",
         "pin_select" : "CK_SWD_TCK",
         "pin_func"   : "GPIO24_CK_SWD_TCK"
     },
     {
         "pin_num"    : "26",
+		"pin_name"   : "GPIO25",
         "pin_select" : "M0_JTAG_TDI",
         "pin_func"   : "GPIO25_M0_JTAG_TDI"
     },
     {
         "pin_num"    : "26",
+		"pin_name"   : "GPIO25",
         "pin_select" : "DSP_JTAG_TDI",
         "pin_func"   : "GPIO25_DSP_JTAG_TDI"
     },
     {
         "pin_num"    : "26",
+		"pin_name"   : "GPIO25",
         "pin_select" : "RF_JTAG_TDI",
         "pin_func"   : "GPIO25_RF_JTAG_TDI"
     },
     {
         "pin_num"    : "26",
+		"pin_name"   : "GPIO25",
         "pin_select" : "GPIO25",
         "pin_func"   : "GPIO25_GPIO25"
     },
     {
         "pin_num"    : "27",
+		"pin_name"   : "GPIO26",
         "pin_select" : "M0_JTAG_TDO",
         "pin_func"   : "GPIO26_M0_JTAG_TDO"
     },
     {
         "pin_num"    : "27",
+		"pin_name"   : "GPIO26",
         "pin_select" : "DSP_JTAG_TDO",
         "pin_func"   : "GPIO26_DSP_JTAG_TDO"
     },
     {
         "pin_num"    : "27",
+		"pin_name"   : "GPIO26",
         "pin_select" : "RF_JTAG_TDO",
         "pin_func"   : "GPIO26_RF_JTAG_TDO"
     },
     {
         "pin_num"    : "27",
+		"pin_name"   : "GPIO26",
         "pin_select" : "GPIO26",
         "pin_func"   : "GPIO26_GPIO26"
     },
     {
         "pin_num"    : "28",
+		"pin_name"   : "GPIO27",
         "pin_select" : "M0_JTAG_TMS",
         "pin_func"   : "GPIO27_M0_JTAG_TMS"
     },
     {
         "pin_num"    : "28",
+		"pin_name"   : "GPIO27",
         "pin_select" : "DSP_JTAG_TMS",
         "pin_func"   : "GPIO27_DSP_JTAG_TMS"
     },
     {
         "pin_num"    : "28",
+		"pin_name"   : "GPIO27",
         "pin_select" : "RF_JTAG_TMS",
         "pin_func"   : "GPIO27_RF_JTAG_TMS"
     },
     {
         "pin_num"    : "28",
+		"pin_name"   : "GPIO27",
         "pin_select" : "GPIO27",
         "pin_func"   : "GPIO27_GPIO27"
     },
     {
         "pin_num"    : "28",
+		"pin_name"   : "GPIO27",
         "pin_select" : "CK_SWD_TMS",
         "pin_func"   : "GPIO27_CK_SWD_TMS"
     },
     {
         "pin_num"    : "29",
+		"pin_name"   : "GPIO28",
         "pin_select" : "M0_JTAG_TRST",
         "pin_func"   : "GPIO28_M0_JTAG_TRST"
     },
     {
         "pin_num"    : "29",
+		"pin_name"   : "GPIO28",
         "pin_select" : "DSP_JTAG_RTCK",
         "pin_func"   : "GPIO28_DSP_JTAG_RTCK"
     },
     {
         "pin_num"    : "29",
+		"pin_name"   : "GPIO28",
         "pin_select" : "RF_JTAG_TRST",
         "pin_func"   : "GPIO28_RF_JTAG_TRST"
     },
     {
         "pin_num"    : "29",
+		"pin_name"   : "GPIO28",
         "pin_select" : "GPIO28",
         "pin_func"   : "GPIO28_GPIO28"
     },
     {
         "pin_num"    : "32",
+		"pin_name"   : "GPIO31",
         "pin_select" : "GPIO31",
         "pin_func"   : "GPIO31_GPIO31"
     },
     {
         "pin_num"    : "32",
+		"pin_name"   : "GPIO31",
         "pin_select" : "SPIFC_CLK",
         "pin_func"   : "GPIO31_SPIFC_CLK"
     },
     {
         "pin_num"    : "32",
+		"pin_name"   : "GPIO31",
         "pin_select" : "DSP_JTAG_TCK",
         "pin_func"   : "GPIO31_DSP_JTAG_TCK"
     },
     {
         "pin_num"    : "32",
+		"pin_name"   : "GPIO31",
         "pin_select" : "RF_JTAG_TCK",
         "pin_func"   : "GPIO31_RF_JTAG_TCK"
     },
     {
         "pin_num"    : "32",
+		"pin_name"   : "GPIO31",
         "pin_select" : "M0_JTAG_TCK",
         "pin_func"   : "GPIO31_M0_JTAG_TCK"
     },
     {
         "pin_num"    : "32",
+		"pin_name"   : "GPIO31",
         "pin_select" : "CK_SWD_TCK",
         "pin_func"   : "GPIO31_CK_SWD_TCK"
     },
     {
         "pin_num"    : "33",
+		"pin_name"   : "GPIO32",
         "pin_select" : "GPIO32",
         "pin_func"   : "GPIO32_GPIO32"
     },
     {
         "pin_num"    : "33",
+		"pin_name"   : "GPIO32",
         "pin_select" : "SPIFC_CS",
         "pin_func"   : "GPIO32_SPIFC_CS"
     },
     {
         "pin_num"    : "33",
+		"pin_name"   : "GPIO32",
         "pin_select" : "DSP_JTAG_TDI",
         "pin_func"   : "GPIO32_DSP_JTAG_TDI"
     },
     {
         "pin_num"    : "33",
+		"pin_name"   : "GPIO32",
         "pin_select" : "RF_JTAG_TDI",
         "pin_func"   : "GPIO32_RF_JTAG_TDI"
     },
     {
         "pin_num"    : "33",
+		"pin_name"   : "GPIO32",
         "pin_select" : "M0_JTAG_TDI",
         "pin_func"   : "GPIO32_M0_JTAG_TDI"
     },
     {
         "pin_num"    : "34",
+		"pin_name"   : "GPIO33",
         "pin_select" : "GPIO33",
         "pin_func"   : "GPIO33_GPIO33"
     },
     {
         "pin_num"    : "34",
+		"pin_name"   : "GPIO33",
         "pin_select" : "SPIFC_DATA0",
         "pin_func"   : "GPIO33_SPIFC_DATA0"
     },
     {
         "pin_num"    : "34",
+		"pin_name"   : "GPIO33",
         "pin_select" : "DSP_JTAG_TDO",
         "pin_func"   : "GPIO33_DSP_JTAG_TDO"
     },
     {
         "pin_num"    : "34",
+		"pin_name"   : "GPIO33",
         "pin_select" : "RF_JTAG_TDO",
         "pin_func"   : "GPIO33_RF_JTAG_TDO"
     },
     {
         "pin_num"    : "34",
+		"pin_name"   : "GPIO33",
         "pin_select" : "M0_JTAG_TDO",
         "pin_func"   : "GPIO33_M0_JTAG_TDO"
     },
     {
         "pin_num"    : "35",
+		"pin_name"   : "GPIO34",
         "pin_select" : "GPIO34",
         "pin_func"   : "GPIO34_GPIO34"
     },
     {
         "pin_num"    : "35",
+		"pin_name"   : "GPIO34",
         "pin_select" : "SPIFC_DATA1",
         "pin_func"   : "GPIO34_SPIFC_DATA1"
     },
     {
         "pin_num"    : "35",
+		"pin_name"   : "GPIO34",
         "pin_select" : "DSP_JTAG_TMS",
         "pin_func"   : "GPIO34_DSP_JTAG_TMS"
     },
     {
         "pin_num"    : "35",
+		"pin_name"   : "GPIO34",
         "pin_select" : "RF_JTAG_TMS",
         "pin_func"   : "GPIO34_RF_JTAG_TMS"
     },
     {
         "pin_num"    : "35",
+		"pin_name"   : "GPIO34",
         "pin_select" : "M0_JTAG_TMS",
         "pin_func"   : "GPIO34_M0_JTAG_TMS"
     },
     {
         "pin_num"    : "35",
+		"pin_name"   : "GPIO34",
         "pin_select" : "CK_SWD_TMS",
         "pin_func"   : "GPIO34_CK_SWD_TMS"
     },
     {
         "pin_num"    : "36",
+		"pin_name"   : "GPIO35",
         "pin_select" : "GPIO35",
         "pin_func"   : "GPIO35_GPIO35"
     },
     {
         "pin_num"    : "36",
+		"pin_name"   : "GPIO35",
         "pin_select" : "SPIFC_DATA2",
         "pin_func"   : "GPIO35_SPIFC_DATA2"
     },
     {
         "pin_num"    : "36",
+		"pin_name"   : "GPIO35",
         "pin_select" : "DSP_JTAG_RTCK",
         "pin_func"   : "GPIO35_DSP_JTAG_RTCK"
     },
     {
         "pin_num"    : "36",
+		"pin_name"   : "GPIO35",
         "pin_select" : "RF_JTAG_TRST",
         "pin_func"   : "GPIO35_RF_JTAG_TRST"
     },
     {
         "pin_num"    : "36",
+		"pin_name"   : "GPIO35",
         "pin_select" : "M0_JTAG_TRST",
         "pin_func"   : "GPIO35_M0_JTAG_TRST"
     },
     {
         "pin_num"    : "37",
+		"pin_name"   : "GPIO36",
         "pin_select" : "GPIO36",
         "pin_func"   : "GPIO36_GPIO36"
     },
     {
         "pin_num"    : "37",
+		"pin_name"   : "GPIO36",
         "pin_select" : "SPIFC_DATA3",
         "pin_func"   : "GPIO36_SPIFC_DATA3"
     },
     {
         "pin_num"    : "38",
+		"pin_name"   : "GPIO37",
         "pin_select" : "SIM_RST",
         "pin_func"   : "GPIO37_SIM_RST"
     },
     {
         "pin_num"    : "38",
+		"pin_name"   : "GPIO37",
         "pin_select" : "GPIO37",
         "pin_func"   : "GPIO37_GPIO37"
     },
     {
         "pin_num"    : "39",
+		"pin_name"   : "GPIO38",
         "pin_select" : "SIM_CLK",
         "pin_func"   : "GPIO38_SIM_CLK"
     },
     {
         "pin_num"    : "39",
+		"pin_name"   : "GPIO38",
         "pin_select" : "GPIO38",
         "pin_func"   : "GPIO38_GPIO38"
     },
     {
         "pin_num"    : "40",
+		"pin_name"   : "GPIO39",
         "pin_select" : "SIM_DATA",
         "pin_func"   : "GPIO39_SIM_DATA"
     },
     {
         "pin_num"    : "40",
+		"pin_name"   : "GPIO39",
         "pin_select" : "GPIO39",
         "pin_func"   : "GPIO39_GPIO39"
     },
     {
         "pin_num"    : "41",
+		"pin_name"   : "GPIO40",
         "pin_select" : "GPIO40",
         "pin_func"   : "GPIO40_GPIO40"
     },
     {
         "pin_num"    : "41",
+		"pin_name"   : "GPIO40",
         "pin_select" : "LTE_TPU_OUT0_0",
         "pin_func"   : "GPIO40_LTE_TPU_OUT0_0"
     },
     {
         "pin_num"    : "41",
+		"pin_name"   : "GPIO40",
         "pin_select" : "MIPI_RFFE_CLK",
         "pin_func"   : "GPIO40_MIPI_RFFE_CLK"
     },
     {
         "pin_num"    : "42",
+		"pin_name"   : "GPIO41",
         "pin_select" : "GPIO41",
         "pin_func"   : "GPIO41_GPIO41"
     },
     {
         "pin_num"    : "42",
+		"pin_name"   : "GPIO41",
         "pin_select" : "LTE_TPU_OUT0_1",
         "pin_func"   : "GPIO41_LTE_TPU_OUT0_1"
     },
     {
         "pin_num"    : "42",
+		"pin_name"   : "GPIO41",
         "pin_select" : "MIPI_RFFE_DATA",
         "pin_func"   : "GPIO41_MIPI_RFFE_DATA"
     },
     {
         "pin_num"    : "45",
+		"pin_name"   : "GPIO44",
         "pin_select" : "GPIO44",
         "pin_func"   : "GPIO44_GPIO44"
     },
     {
         "pin_num"    : "45",
+		"pin_name"   : "GPIO44",
         "pin_select" : "LTE_TPU_OUT0_2",
         "pin_func"   : "GPIO44_LTE_TPU_OUT0_2"
     },
     {
         "pin_num"    : "46",
+		"pin_name"   : "GPIO45",
         "pin_select" : "GPIO45",
         "pin_func"   : "GPIO45_GPIO45"
     },
     {
         "pin_num"    : "46",
+		"pin_name"   : "GPIO45",
         "pin_select" : "LTE_TPU_OUT0_3",
         "pin_func"   : "GPIO45_LTE_TPU_OUT0_3"
     },
     {
         "pin_num"    : "47",
+		"pin_name"   : "GPIO46",
         "pin_select" : "GPIO46",
         "pin_func"   : "GPIO46_GPIO46"
     },
     {
         "pin_num"    : "47",
+		"pin_name"   : "GPIO46",
         "pin_select" : "LTE_TPU_OUT0_4",
         "pin_func"   : "GPIO46_LTE_TPU_OUT0_4"
     },
     {
         "pin_num"    : "48",
+		"pin_name"   : "GPIO47",
         "pin_select" : "GPIO47",
         "pin_func"   : "GPIO47_GPIO47"
     },
     {
         "pin_num"    : "48",
+		"pin_name"   : "GPIO47",
         "pin_select" : "LTE_TPU_OUT0_5",
         "pin_func"   : "GPIO47_LTE_TPU_OUT0_5"
     },
     {
         "pin_num"    : "49",
+		"pin_name"   : "GPIO48",
         "pin_select" : "GPIO48",
         "pin_func"   : "GPIO48_GPIO48"
     },
     {
         "pin_num"    : "49",
+		"pin_name"   : "GPIO48",
         "pin_select" : "LTE_TPU_OUT0_6",
         "pin_func"   : "GPIO48_LTE_TPU_OUT0_6"
     },
     {
         "pin_num"    : "50",
+		"pin_name"   : "GPIO49",
         "pin_select" : "GPIO49",
         "pin_func"   : "GPIO49_GPIO49"
     },
     {
         "pin_num"    : "50",
+		"pin_name"   : "GPIO49",
         "pin_select" : "LTE_TPU_OUT0_7",
         "pin_func"   : "GPIO49_LTE_TPU_OUT0_7"
     },
     {
         "pin_num"    : "51",
+		"pin_name"   : "GPIO50",
         "pin_select" : "GPIO50",
         "pin_func"   : "GPIO50_GPIO50"
     },
     {
         "pin_num"    : "51",
+		"pin_name"   : "GPIO50",
         "pin_select" : "LTE_TPU_OUT0_8",
         "pin_func"   : "GPIO50_LTE_TPU_OUT0_8"
     },
     {
         "pin_num"    : "54",
+		"pin_name"   : "GPIO53",
         "pin_select" : "GPIO53",
         "pin_func"   : "GPIO53_GPIO53"
     },
     {
         "pin_num"    : "55",
+		"pin_name"   : "GPIO54",
         "pin_select" : "GPIO54",
         "pin_func"   : "GPIO54_GPIO54"
     }
