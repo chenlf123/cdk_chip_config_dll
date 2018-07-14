@@ -168,6 +168,7 @@ extern "C" {
     {
 #if DEBUG
         int ret =log_file.Create(thisDllDirPath() + "/" + LOG_FILE, true);
+
         log_file.Open(thisDllDirPath() + "/" + LOG_FILE, wxFile::write);
         wxString log = "???\n!!!\n";
         log_file.Write(log);
@@ -206,15 +207,113 @@ extern "C" {
                 pin = rootPin.nextChild();
                 continue;
             }
-             funcBody << wxT("\tdrv_pinmux_config(") + pin_name + wxT(", ") + pin_func + wxT(");");
+             funcBody << wxT("    drv_pinmux_config(") + pin_name + wxT(", ") + pin_func + wxT(");");
              funcBody << "\n";
             pin = rootPin.nextChild();
         }
+
+		funcBody << "\n    void GPIO_init(void);\n    GPIO_init();\n";
+
+		funcBody << wxT("}\n\n");
+
+		pin = rootPin.firstChild();
+        while (pin.isOk()) {
+            JSONElement property = pin.firstChild();
+            while (property.isOk()) {
+                if (property.getName() == PINNUM) {
+                    pinNum = property.toString();
+                }
+                else if (property.getName() == SELECT) {
+                    select = property.toString();
+                }
+                else if (property.getName() == DIRECTION) {
+                    direct = property.toString();
+                }
+                else if (property.getName() == PULLUP) {
+                    pullup = property.toString();
+                }
+                else if (property.getName() == DEBOUNCE) {
+                    dubounce = property.toString();
+                }
+
+                property = pin.nextChild();
+            }
+            if (map_pin_fun(pinNum, select, &pin_name, &pin_func) != 0) {
+                pin = rootPin.nextChild();
+                continue;
+            }
+
+			if (select.Contains("GPIO")) {
+				funcBody << wxT("gpio_pin_handle_t GPIO_") + pin_name + wxT("_handler;\n");
+			}
+
+			pin = rootPin.nextChild();
+        }
+
+		funcBody << wxT("\n");
+		funcBody << wxT("void GPIO_init(void)\n{");
+
+		pin = rootPin.firstChild();
+        while (pin.isOk()) {
+            JSONElement property = pin.firstChild();
+            while (property.isOk()) {
+                if (property.getName() == PINNUM) {
+                    pinNum = property.toString();
+                }
+                else if (property.getName() == SELECT) {
+                    select = property.toString();
+                }
+                else if (property.getName() == DIRECTION) {
+                    direct = property.toString();
+                }
+                else if (property.getName() == PULLUP) {
+                    pullup = property.toString();
+                }
+                else if (property.getName() == DEBOUNCE) {
+                    dubounce = property.toString();
+                }
+
+                property = pin.nextChild();
+            }
+            if (map_pin_fun(pinNum, select, &pin_name, &pin_func) != 0) {
+                pin = rootPin.nextChild();
+                continue;
+            }
+			wxString _pullup, _direct;
+			if (select.Contains("GPIO")) {
+				if (pullup == "pull none") {
+					_pullup = wxT("GPIO_MODE_PULLNONE");
+				} else if (pullup == "open drain") {
+					_pullup = wxT("GPIO_MODE_OPEN_DRAIN");
+				} else if (pullup == "pulldown") {
+					_pullup = wxT("GPIO_MODE_PULLDOWM");
+				} else if (pullup == "pullup") {
+					_pullup = wxT("GPIO_MODE_PULLUP");
+				} else if (pullup == "push pull") {
+					_pullup = wxT("GPIO_MODE_PUSH_PULL");
+				}
+
+				if (direct == "input") {
+					_direct = wxT("GPIO_DIRECTION_INPUT");
+				} else if (direct == "output") {
+					_direct = wxT("GPIO_DIRECTION_OUTPUT");
+				}
+
+				funcBody << wxT("\n    GPIO_") + pin_name + wxT("_handler = csi_gpio_pin_initialize(") + pin_name + wxT(", NULL);");
+				funcBody << wxT("\n    csi_gpio_pin_config(");
+				funcBody << wxT("GPIO_") + pin_name + wxT("_handler, ") + _pullup + wxT(", ") + _direct + ");\n";
+			}
+
+			pin = rootPin.nextChild();
+        }
+
+//		funcBody << wxT("\n");
+
 //        funcBody << thisDllDirPath();
 
         // prepare to generate the code
         JSONRoot *root = new JSONRoot(cJSON_Object);
-        wxString funcName = "pinmux_init";
+        wxString funcName = "PIN_init";
         root->toElement().addProperty(funcName, funcBody);
         jsons.push_back(JsonRootPtr(root));
         wxString *jstr = new wxString(root->toElement().format());
