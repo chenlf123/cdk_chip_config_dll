@@ -93,7 +93,7 @@ extern "C" {
         file.Seek(0);
 
         wxFileOffset filesize = file.Length();
-        json_content = new wxUint8[filesize];
+        json_content = new wxUint8[filesize + 1];
 
         if (file.Read((void *)json_content, filesize) != filesize) {
             file.Close();
@@ -105,6 +105,8 @@ extern "C" {
             return -1;
         }
 		file.Close();
+
+		json_content[filesize] = '\0';
 
 //		log_file.Write(json_content);
 
