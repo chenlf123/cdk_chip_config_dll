@@ -161,7 +161,7 @@
           <Comment/>
         </Pin>
         <Pin pinNum="15" group="PC">
-          <PinFunctions select="UART1.CTS">
+          <PinFunctions select="I2C1.SCL">
             <Func deviceId="GPIOC" csi_pin_name="PORTC_PIN0">GPIOC0</Func>
             <Func deviceId="I2C1">I2C1.SCL</Func>
             <Func deviceId="UART1">UART1.CTS</Func>
@@ -173,7 +173,7 @@
           <Comment/>
         </Pin>
         <Pin pinNum="16" group="PC">
-          <PinFunctions select="UART1.RTS">
+          <PinFunctions select="I2C1.SDA">
             <Func deviceId="GPIOC" csi_pin_name="PORTC_PIN1">GPIOC1</Func>
             <Func deviceId="I2C1">I2C1.SDA</Func>
             <Func deviceId="UART1">UART1.RTS</Func>
@@ -312,7 +312,7 @@
           </PinFunctions>
         </Pin>
         <Pin pinNum="38" group="PA">
-          <PinFunctions select="UART0.RTS">
+          <PinFunctions select="PWM.CH1">
             <Func deviceId="GPIOA" csi_pin_name="PORTA_PIN5">GPIOA5</Func>
             <Func deviceId="UART0">UART0.RTS</Func>
             <Func deviceId="PWM">PWM.CH1</Func>
@@ -340,7 +340,7 @@
           </PinFunctions>
         </Pin>
         <Pin pinNum="41" group="PA">
-          <PinFunctions select="UART0.CTS">
+          <PinFunctions select="PWM.CH0">
             <Func deviceId="GPIOA" csi_pin_name="PORTA_PIN4">GPIOA4</Func>
             <Func deviceId="UART0">UART0.CTS</Func>
             <Func deviceId="PWM">PWM.CH0</Func>
@@ -368,7 +368,7 @@
           </PinFunctions>
         </Pin>
         <Pin pinNum="44" group="PA">
-          <PinFunctions select="GPIOA25">
+          <PinFunctions select="UART2.RX">
             <Func deviceId="GPIOA" csi_pin_name="PORTA_PIN25">GPIOA25</Func>
             <Func deviceId="UART2">UART2.RX</Func>
             <Func deviceId="I2S">I2S.SCLK</Func>
@@ -380,7 +380,7 @@
           <Comment/>
         </Pin>
         <Pin pinNum="45" group="PA">
-          <PinFunctions select="GPIOA24">
+          <PinFunctions select="UART2.TX">
             <Func deviceId="GPIOA" csi_pin_name="PORTA_PIN24">GPIOA24</Func>
             <Func deviceId="UART2">UART2.TX</Func>
             <Func deviceId="I2S">I2S.SCLK</Func>
@@ -482,7 +482,7 @@
           <Comment/>
         </Pin>
         <Pin pinNum="58" group="PA">
-          <PinFunctions select="GPIOA18">
+          <PinFunctions select="SPI1.CS0">
             <Func deviceId="GPIOA" csi_pin_name="PORTA_PIN18">GPIOA18</Func>
             <Func deviceId="SPI1">SPI1.CS0</Func>
             <Func deviceId="ACMP">ACMP.O0</Func>
@@ -524,7 +524,7 @@
           <Comment/>
         </Pin>
         <Pin pinNum="63" group="PB">
-          <PinFunctions select="I2C0.SDA">
+          <PinFunctions select="PWM.CH3">
             <Func deviceId="GPIOB" csi_pin_name="PORTB_PIN1">GPIOB1</Func>
             <Func deviceId="I2C0">I2C0.SDA</Func>
             <Func deviceId="PWM">PWM.CH3</Func>
@@ -535,7 +535,7 @@
           <Comment/>
         </Pin>
         <Pin pinNum="64" group="PB">
-          <PinFunctions select="I2C0.SCL">
+          <PinFunctions select="PWM.CH2">
             <Func deviceId="GPIOB" csi_pin_name="PORTB_PIN0">GPIOB0</Func>
             <Func deviceId="I2C0">I2C0.SCL</Func>
             <Func deviceId="PWM">PWM.CH2</Func>
@@ -581,7 +581,7 @@
       <Category>
         <label>IIC</label>
         <Device deviceId="I2C0" usedPins="63,64" csi_device_name="CSI_IIC">
-          <UseOrNot>1</UseOrNot>
+          <UseOrNot>0</UseOrNot>
           <label>I2C0</label>
           <Property class="Choice" csi_dev_property_id="csi_iic_mode">
             <label>mode</label>
@@ -620,7 +620,6 @@
           </Property>
         </Device>
         <Device deviceId="I2C1" usedPins="15,16" csi_device_name="CSI_IIC">
-          <GenCodeFuncName>IIC1_init_code_gen</GenCodeFuncName>
           <UseOrNot>0</UseOrNot>
           <label>I2C1</label>
           <Property class="Choice" csi_dev_property_id="csi_iic_mode">
@@ -788,7 +787,7 @@
       <Category>
         <label>UART</label>
         <Device deviceId="UART0" usedPins="5,6,38,41" csi_device_name="CSI_UART">
-          <UseOrNot>1</UseOrNot>
+          <UseOrNot>0</UseOrNot>
           <label>UART0</label>
           <Property class="Text" csi_dev_property_id="csi_uart_baud">
             <label>baud</label>
@@ -846,7 +845,7 @@
           </Property>
         </Device>
         <Device deviceId="UART1" usedPins="15,16,47,48" csi_device_name="CSI_UART">
-          <UseOrNot>1</UseOrNot>
+          <UseOrNot>0</UseOrNot>
           <label>UART1</label>
           <Property class="Text" csi_dev_property_id="csi_uart_baud">
             <label>baud</label>
